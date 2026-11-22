@@ -1,37 +1,76 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"28 newmain.c
-[; ;newmain.c: 28:             case ESTADO_STOP:
-[c E1014 0 1 2 3 4 .. ]
-[n E1014 . ESTADO_STOP ESTADO_ADELANTE ESTADO_ATRAS ESTADO_IZQUIERDA ESTADO_DERECHA  ]
+"38 newmain.c
+[; ;newmain.c: 38:         }
+[c E1033 0 1 2 3 4 .. ]
+[n E1033 . ESTADO_STOP ESTADO_ADELANTE ESTADO_ATRAS ESTADO_IZQUIERDA ESTADO_DERECHA  ]
 [p mainexit ]
-"30
-[; ;newmain.c: 30:                 Motor_Stop();
+"40
+[; ;newmain.c: 40:         {
 [v _Sistema_Init `(v ~T0 @X0 0 ef ]
-"14 ./motor.h
-[; ;./motor.h: 14: void Motor_Stop(void);
-[v _Motor_Stop `(v ~T0 @X0 0 ef ]
-"6
-[; ;./motor.h: 6: void Motor_SetSpeed(unsigned int duty);
-[v _Motor_SetSpeed `(v ~T0 @X0 0 ef1`ui ]
+"24
+[; ;newmain.c: 24: {
+[v _Navigation_Update `(v ~T0 @X0 0 ef ]
+"5 ./navigation.h
+[; ;./navigation.h: 5: {
+[s S99 `ui 1 `ui 1 `ui 1 ]
+[n S99 . izquierda centro derecha ]
+"12
+[; ;./navigation.h: 12: extern Distancias entorno;
+[v _entorno `S99 ~T0 @X0 0 e ]
+"2644 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 2644: extern volatile __bit RA0 __attribute__((address(0x28)));
+[v _RA0 `Vb ~T0 @X0 0 e@40 ]
+"1315
+[; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 1315:     struct {
+[s S58 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S58 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 ]
+"1314
+[; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 1314: typedef union {
+[u S57 `S58 1 ]
+[n S57 . . ]
+"1324
+[; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 1324: extern volatile TRISAbits_t TRISAbits __attribute__((address(0x085)));
+[v _TRISAbits `VS57 ~T0 @X0 0 e@133 ]
+"21 newmain.c
+[; ;newmain.c: 21: void Sistema_Init(void);
+[v _LED_Boot `(v ~T0 @X0 0 ef ]
+"4 ./motor.h
+[; ;./motor.h: 4: void Motor_Init(void);
+[v _Motor_Init `(v ~T0 @X0 0 ef ]
+"4 ./ultrasonic.h
+[; ;./ultrasonic.h: 4: void Ultrasonic_Init(void);
+[v _Ultrasonic_Init `(v ~T0 @X0 0 ef ]
+"4 ./servo.h
+[; ;./servo.h: 4: void Servo_Init(void);
+[v _Servo_Init `(v ~T0 @X0 0 ef ]
+"25 newmain.c
+[; ;newmain.c: 25:     Sistema_Init();
+[v _Navigation_Init `(v ~T0 @X0 0 ef ]
 [v F164 `(v ~T0 @X0 1 tf1`ul ]
 "20 C:\Program Files\Microchip\xc8\v3.10\pic\include/builtins.h
 [v __delay `JF164 ~T0 @X0 0 e ]
 [p i __delay ]
-"8 ./motor.h
+"6 ./servo.h
+[; ;./servo.h: 6: void Servo_Izquierda(void);
+[v _Servo_Izquierda `(v ~T0 @X0 0 ef ]
+"7
+[; ;./servo.h: 7: void Servo_Centro(void);
+[v _Servo_Centro `(v ~T0 @X0 0 ef ]
+"8
+[; ;./servo.h: 8: void Servo_Derecha(void);
+[v _Servo_Derecha `(v ~T0 @X0 0 ef ]
+"5 ./ultrasonic.h
+[; ;./ultrasonic.h: 5: unsigned int Ultrasonic_Read(void);
+[v _Ultrasonic_Read `(ui ~T0 @X0 0 ef ]
+"6 ./motor.h
+[; ;./motor.h: 6: void Motor_SetSpeed(unsigned int duty);
+[v _Motor_SetSpeed `(v ~T0 @X0 0 ef1`ui ]
+"8
 [; ;./motor.h: 8: void Motor_Adelante(void);
 [v _Motor_Adelante `(v ~T0 @X0 0 ef ]
-"11
-[; ;./motor.h: 11: void Motor_Izquierda(void);
-[v _Motor_Izquierda `(v ~T0 @X0 0 ef ]
-"12
-[; ;./motor.h: 12: void Motor_Derecha(void);
-[v _Motor_Derecha `(v ~T0 @X0 0 ef ]
-"9
-[; ;./motor.h: 9: void Motor_Atras(void);
-[v _Motor_Atras `(v ~T0 @X0 0 ef ]
-"4
-[; ;./motor.h: 4: void Motor_Init(void);
-[v _Motor_Init `(v ~T0 @X0 0 ef ]
+"14
+[; ;./motor.h: 14: void Motor_Stop(void);
+[v _Motor_Stop `(v ~T0 @X0 0 ef ]
 "38 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 38: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -212,177 +251,238 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2347
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 2347: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"6 newmain.c
-[; ;newmain.c: 6:     ESTADO_ADELANTE,
+"10 newmain.c
+[; ;newmain.c: 10: {
 [p x FOSC  =  HS ]
-"7
-[; ;newmain.c: 7:     ESTADO_ATRAS,
-[p x WDTE  =  OFF ]
-"8
-[; ;newmain.c: 8:     ESTADO_IZQUIERDA,
-[p x PWRTE  =  ON ]
-"9
-[; ;newmain.c: 9:     ESTADO_DERECHA
-[p x BOREN  =  OFF ]
-"10
-[; ;newmain.c: 10: 
-[p x LVP  =  OFF ]
 "11
-[; ;newmain.c: 11: } EstadoRobot;
-[p x CPD  =  OFF ]
+[; ;newmain.c: 11:     ESTADO_STOP = 0,
+[p x WDTE  =  OFF ]
 "12
-[; ;newmain.c: 12: 
-[p x WRT  =  OFF ]
+[; ;newmain.c: 12:     ESTADO_ADELANTE,
+[p x PWRTE  =  ON ]
 "13
-[; ;newmain.c: 13: EstadoRobot estadoActual;
+[; ;newmain.c: 13:     ESTADO_ATRAS,
+[p x BOREN  =  ON ]
+"14
+[; ;newmain.c: 14:     ESTADO_IZQUIERDA,
+[p x LVP  =  OFF ]
+"15
+[; ;newmain.c: 15:     ESTADO_DERECHA
+[p x CPD  =  OFF ]
+"16
+[; ;newmain.c: 16: 
+[p x WRT  =  OFF ]
+"17
+[; ;newmain.c: 17: } EstadoRobot;
 [p x CP  =  OFF ]
-"28
-[; ;newmain.c: 28:             case ESTADO_STOP:
-[v _estadoActual `E1014 ~T0 @X0 1 e ]
+"38
+[; ;newmain.c: 38:         }
+[v _estadoActual `E1033 ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"32
-[; ;newmain.c: 32: 
+"42
+[; ;newmain.c: 42:         }
 [v _main `(v ~T0 @X0 1 ef ]
-"33
-[; ;newmain.c: 33:                 _delay((unsigned long)((1000)*(20000000/4000.0)));
+"43
+[; ;newmain.c: 43:     }
 {
 [e :U _main ]
 [f ]
-"34
-[; ;newmain.c: 34: 
+"44
+[; ;newmain.c: 44: }
 [e ( _Sistema_Init ..  ]
-"35
-[; ;newmain.c: 35:                 estadoActual = ESTADO_ADELANTE;
-[v _vel `ui ~T0 @X0 1 a ]
-[e = _vel -> -> 500 `i `ui ]
-"37
-[; ;newmain.c: 37:                 break;
-[e = _estadoActual . `E1014 0 ]
-"39
-[; ;newmain.c: 39:             case ESTADO_ADELANTE:
-[e :U 101 ]
-"40
-[; ;newmain.c: 40: 
-{
-"41
-[; ;newmain.c: 41:                 Motor_SetSpeed(vel);
-[e $U 104  ]
-"42
-[; ;newmain.c: 42:                 Motor_Adelante();
-{
-"43
-[; ;newmain.c: 43: 
-[e :U 105 ]
-"45
-[; ;newmain.c: 45: 
-[e ( _Motor_Stop ..  ]
 "46
-[; ;newmain.c: 46:                 estadoActual = ESTADO_IZQUIERDA;
-[e ( _Motor_SetSpeed (1 -> -> 0 `i `ui ]
+[; ;newmain.c: 46: void Sistema_Init(void)
+[e = _estadoActual . `E1033 0 ]
 "48
-[; ;newmain.c: 48:                 break;
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"50
-[; ;newmain.c: 50:             case ESTADO_IZQUIERDA:
-[e = _estadoActual . `E1014 1 ]
+[; ;newmain.c: 48:     TRISAbits.TRISA0 = 0;
+[e :U 102 ]
+"49
+[; ;newmain.c: 49:     RA0 = 0;
+{
+"51
+[; ;newmain.c: 51:     LED_Boot();
+[e ( _Navigation_Update ..  ]
 "52
-[; ;newmain.c: 52:                 Motor_SetSpeed(vel);
-[e $U 103  ]
-"54
-[; ;newmain.c: 54: 
-[e :U 106 ]
+[; ;newmain.c: 52:     Motor_Init();
+[e $ ! && && < . _entorno 1 -> -> 15 `i `ui < . _entorno 0 -> -> 15 `i `ui < . _entorno 2 -> -> 15 `i `ui 104  ]
+"55
+[; ;newmain.c: 55:     Navigation_Init();
+{
 "56
-[; ;newmain.c: 56: 
-[e ( _Motor_SetSpeed (1 _vel ]
+[; ;newmain.c: 56: }
+[e = _RA0 -> -> 1 `i `b ]
 "57
-[; ;newmain.c: 57:                 estadoActual = ESTADO_DERECHA;
-[e ( _Motor_Adelante ..  ]
+[; ;newmain.c: 57: void LED_Boot(void)
+}
+[e $U 105  ]
+"58
+[; ;newmain.c: 58: {
+[e :U 104 ]
 "59
-[; ;newmain.c: 59:                 break;
-[e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;newmain.c: 59:     unsigned char i;
+{
+"60
+[; ;newmain.c: 60: 
+[e = _RA0 -> -> 0 `i `b ]
 "61
-[; ;newmain.c: 61:             case ESTADO_DERECHA:
-[e = _estadoActual . `E1014 3 ]
+[; ;newmain.c: 61:     for(i = 0; i < 10; i++)
+}
+[e :U 105 ]
+"62
+[; ;newmain.c: 62:     {
+}
+[e :U 101 ]
+[e $U 102  ]
+[e :U 103 ]
 "63
-[; ;newmain.c: 63:                 Motor_SetSpeed(vel);
-[e $U 103  ]
+[; ;newmain.c: 63:         RA0 = 1;
+[e :UE 100 ]
+}
 "65
 [; ;newmain.c: 65: 
-[e :U 107 ]
-"67
-[; ;newmain.c: 67: 
-[e ( _Motor_SetSpeed (1 _vel ]
-"68
-[; ;newmain.c: 68:                 estadoActual = ESTADO_ATRAS;
-[e ( _Motor_Izquierda ..  ]
-"70
-[; ;newmain.c: 70:                 break;
-[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"72
-[; ;newmain.c: 72:             case ESTADO_ATRAS:
-[e = _estadoActual . `E1014 4 ]
-"74
-[; ;newmain.c: 74:                 Motor_SetSpeed(vel);
-[e $U 103  ]
-"76
-[; ;newmain.c: 76: 
-[e :U 108 ]
-"78
-[; ;newmain.c: 78: 
-[e ( _Motor_SetSpeed (1 _vel ]
-"79
-[; ;newmain.c: 79:                 estadoActual = ESTADO_STOP;
-[e ( _Motor_Derecha ..  ]
-"81
-[; ;newmain.c: 81:                 break;
-[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"83
-[; ;newmain.c: 83:     }
-[e = _estadoActual . `E1014 2 ]
-"85
-[; ;newmain.c: 85: 
-[e $U 103  ]
-"87
-[; ;newmain.c: 87: {
-[e :U 109 ]
-"89
-[; ;newmain.c: 89: }
-[e ( _Motor_SetSpeed (1 _vel ]
-"90
-[e ( _Motor_Atras ..  ]
-"92
-[e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"94
-[e = _estadoActual . `E1014 0 ]
-"96
-[e $U 103  ]
-"97
-}
-[e $U 103  ]
-[e :U 104 ]
-[e [\ -> _estadoActual `ui , $ -> . `E1014 0 `ui 105
- , $ -> . `E1014 1 `ui 106
- , $ -> . `E1014 3 `ui 107
- , $ -> . `E1014 4 `ui 108
- , $ -> . `E1014 2 `ui 109
- 103 ]
-[e :U 103 ]
-"98
-}
-[e :U 100 ]
-[e $U 101  ]
-[e :U 102 ]
-"99
-[e :UE 99 ]
-}
-"101
 [v _Sistema_Init `(v ~T0 @X0 1 ef ]
-"102
+"66
+[; ;newmain.c: 66:         RA0 = 0;
 {
 [e :U _Sistema_Init ]
 [f ]
-"103
+"67
+[; ;newmain.c: 67:         _delay((unsigned long)((200)*(20000000/4000.0)));
+[e = . . _TRISAbits 0 0 -> -> 0 `i `uc ]
+"68
+[; ;newmain.c: 68:     }
+[e = _RA0 -> -> 0 `i `b ]
+"70
+[; ;newmain.c: 70: 
+[e ( _LED_Boot ..  ]
+"71
+[; ;newmain.c: 71: 
 [e ( _Motor_Init ..  ]
+"72
+[; ;newmain.c: 72: 
+[e ( _Ultrasonic_Init ..  ]
+"73
+[; ;newmain.c: 73: void testServo(void){
+[e ( _Servo_Init ..  ]
+"74
+[; ;newmain.c: 74: 
+[e ( _Navigation_Init ..  ]
+"75
+[; ;newmain.c: 75:     Servo_Izquierda();
+[e :UE 106 ]
+}
+"76
+[; ;newmain.c: 76:     _delay((unsigned long)((1000)*(20000000/4000.0)));
+[v _LED_Boot `(v ~T0 @X0 1 ef ]
+"77
+[; ;newmain.c: 77: 
+{
+[e :U _LED_Boot ]
+[f ]
+"78
+[; ;newmain.c: 78:     Servo_Centro();
+[v _i `uc ~T0 @X0 1 a ]
+"80
+[; ;newmain.c: 80: 
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 10 `i 108  ]
+[e $U 109  ]
+[e :U 108 ]
+"81
+[; ;newmain.c: 81:     Servo_Derecha();
+{
+"82
+[; ;newmain.c: 82:     _delay((unsigned long)((1000)*(20000000/4000.0)));
+[e = _RA0 -> -> 1 `i `b ]
+"83
+[; ;newmain.c: 83: 
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"85
+[; ;newmain.c: 85:     _delay((unsigned long)((1000)*(20000000/4000.0)));
+[e = _RA0 -> -> 0 `i `b ]
+"86
+[; ;newmain.c: 86: 
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"87
+[; ;newmain.c: 87: }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 10 `i 108  ]
+[e :U 109 ]
+}
+"88
+[; ;newmain.c: 88: 
+[e :UE 107 ]
+}
+"92
+[; ;newmain.c: 92:         if(distancia > 15)
+[v _testServo `(v ~T0 @X0 1 ef ]
+{
+[e :U _testServo ]
+[f ]
+"94
+[; ;newmain.c: 94:             RA0 = 0;
+[e ( _Servo_Izquierda ..  ]
+"95
+[; ;newmain.c: 95:             Motor_SetSpeed(400);
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"97
+[; ;newmain.c: 97:         }
+[e ( _Servo_Centro ..  ]
+"98
+[; ;newmain.c: 98:         else
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"100
+[; ;newmain.c: 100:             RA0 = 1;
+[e ( _Servo_Derecha ..  ]
+"101
+[; ;newmain.c: 101: 
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"103
+[; ;newmain.c: 103:         }
+[e ( _Servo_Centro ..  ]
 "104
-[e :UE 110 ]
+[; ;newmain.c: 104: 
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"106
+[; ;newmain.c: 106: 
+[e :UE 111 ]
+}
+"108
+[v _testUltrasonido `(v ~T0 @X0 1 ef ]
+{
+[e :U _testUltrasonido ]
+[f ]
+"109
+[v _distancia `ui ~T0 @X0 1 a ]
+[e = _distancia ( _Ultrasonic_Read ..  ]
+"111
+[e $ ! > _distancia -> -> 15 `i `ui 113  ]
+"112
+{
+"113
+[e = _RA0 -> -> 0 `i `b ]
+"114
+[e ( _Motor_SetSpeed (1 -> -> 400 `i `ui ]
+"115
+[e ( _Motor_Adelante ..  ]
+"116
+}
+[e $U 114  ]
+"117
+[e :U 113 ]
+"118
+{
+"119
+[e = _RA0 -> -> 1 `i `b ]
+"121
+[e ( _Motor_Stop ..  ]
+"122
+}
+[e :U 114 ]
+"124
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"126
+[e :UE 112 ]
 }

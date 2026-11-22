@@ -25,6 +25,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 "876
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 876: extern volatile unsigned char CCPR1L __attribute__((address(0x015)));
 [v _CCPR1L `Vuc ~T0 @X0 0 e@21 ]
+"714
+[; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 714: extern volatile unsigned char TMR2 __attribute__((address(0x011)));
+[v _TMR2 `Vuc ~T0 @X0 0 e@17 ]
+"522
+[; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 522:     struct {
+[s S25 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S25 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF PSPIF ]
+"521
+[; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 521: typedef union {
+[u S24 `S25 1 ]
+[n S24 . . ]
+"533
+[; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 533: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x00C)));
+[v _PIR1bits `VS24 ~T0 @X0 0 e@12 ]
 "2692
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 2692: extern volatile __bit RC0 __attribute__((address(0x38)));
 [v _RC0 `Vb ~T0 @X0 0 e@56 ]
@@ -255,160 +269,166 @@ Version 4.0 HI-TECH Software Intermediate Code
 "33
 [; ;motor.c: 33:     CCPR1L = 0;
 [e = _CCPR1L -> -> 0 `i `uc ]
-"34
-[; ;motor.c: 34: }
+"35
+[; ;motor.c: 35:     TMR2 = 0;
+[e = _TMR2 -> -> 0 `i `uc ]
+"37
+[; ;motor.c: 37:     PIR1bits.TMR2IF = 0;
+[e = . . _PIR1bits 0 1 -> -> 0 `i `uc ]
+"38
+[; ;motor.c: 38: }
 [e :UE 99 ]
 }
-"35
-[; ;motor.c: 35: void Motor_SetSpeed(unsigned int duty)
+"39
+[; ;motor.c: 39: void Motor_SetSpeed(unsigned int duty)
 [v _Motor_SetSpeed `(v ~T0 @X0 1 ef1`ui ]
-"36
-[; ;motor.c: 36: {
+"40
+[; ;motor.c: 40: {
 {
 [e :U _Motor_SetSpeed ]
-"35
-[; ;motor.c: 35: void Motor_SetSpeed(unsigned int duty)
+"39
+[; ;motor.c: 39: void Motor_SetSpeed(unsigned int duty)
 [v _duty `ui ~T0 @X0 1 r1 ]
-"36
-[; ;motor.c: 36: {
+"40
+[; ;motor.c: 40: {
 [f ]
-"37
-[; ;motor.c: 37:     if(duty > 1023)
+"41
+[; ;motor.c: 41:     if(duty > 1023)
 [e $ ! > _duty -> -> 1023 `i `ui 101  ]
-"38
-[; ;motor.c: 38:         duty = 1023;
+"42
+[; ;motor.c: 42:         duty = 1023;
 [e = _duty -> -> 1023 `i `ui ]
 [e :U 101 ]
-"40
-[; ;motor.c: 40:     CCPR1L = duty >> 2;
-[e = _CCPR1L -> >> _duty -> 2 `i `uc ]
-"42
-[; ;motor.c: 42:     CCP1CON &= 0xCF;
-[e =& _CCP1CON -> -> 207 `i `Vuc ]
-"43
-[; ;motor.c: 43:     CCP1CON |= (duty & 0x03) << 4;
-[e =| _CCP1CON -> << & _duty -> -> 3 `i `ui -> 4 `i `Vuc ]
 "44
-[; ;motor.c: 44: }
+[; ;motor.c: 44:     CCPR1L = duty >> 2;
+[e = _CCPR1L -> >> _duty -> 2 `i `uc ]
+"46
+[; ;motor.c: 46:     CCP1CON &= 0xCF;
+[e =& _CCP1CON -> -> 207 `i `Vuc ]
+"47
+[; ;motor.c: 47:     CCP1CON |= (duty & 0x03) << 4;
+[e =| _CCP1CON -> << & _duty -> -> 3 `i `ui -> 4 `i `Vuc ]
+"48
+[; ;motor.c: 48: }
 [e :UE 100 ]
 }
-"45
-[; ;motor.c: 45: void Motor_Adelante(void)
+"49
+[; ;motor.c: 49: void Motor_Adelante(void)
 [v _Motor_Adelante `(v ~T0 @X0 1 ef ]
-"46
-[; ;motor.c: 46: {
+"50
+[; ;motor.c: 50: {
 {
 [e :U _Motor_Adelante ]
 [f ]
-"47
-[; ;motor.c: 47:     RC0 = 1;
-[e = _RC0 -> -> 1 `i `b ]
-"48
-[; ;motor.c: 48:     RC1 = 0;
-[e = _RC1 -> -> 0 `i `b ]
-"50
-[; ;motor.c: 50:     RC3 = 0;
-[e = _RC3 -> -> 0 `i `b ]
 "51
-[; ;motor.c: 51:     RC4 = 1;
-[e = _RC4 -> -> 1 `i `b ]
+[; ;motor.c: 51:     RC0 = 1;
+[e = _RC0 -> -> 1 `i `b ]
 "52
-[; ;motor.c: 52: }
+[; ;motor.c: 52:     RC1 = 0;
+[e = _RC1 -> -> 0 `i `b ]
+"54
+[; ;motor.c: 54:     RC3 = 0;
+[e = _RC3 -> -> 0 `i `b ]
+"55
+[; ;motor.c: 55:     RC4 = 1;
+[e = _RC4 -> -> 1 `i `b ]
+"56
+[; ;motor.c: 56: }
 [e :UE 102 ]
 }
-"53
-[; ;motor.c: 53: void Motor_Atras(void)
+"57
+[; ;motor.c: 57: void Motor_Atras(void)
 [v _Motor_Atras `(v ~T0 @X0 1 ef ]
-"54
-[; ;motor.c: 54: {
+"58
+[; ;motor.c: 58: {
 {
 [e :U _Motor_Atras ]
 [f ]
-"55
-[; ;motor.c: 55:     RC0 = 0;
-[e = _RC0 -> -> 0 `i `b ]
-"56
-[; ;motor.c: 56:     RC1 = 1;
-[e = _RC1 -> -> 1 `i `b ]
-"58
-[; ;motor.c: 58:     RC3 = 1;
-[e = _RC3 -> -> 1 `i `b ]
 "59
-[; ;motor.c: 59:     RC4 = 0;
-[e = _RC4 -> -> 0 `i `b ]
+[; ;motor.c: 59:     RC0 = 0;
+[e = _RC0 -> -> 0 `i `b ]
 "60
-[; ;motor.c: 60: }
+[; ;motor.c: 60:     RC1 = 1;
+[e = _RC1 -> -> 1 `i `b ]
+"62
+[; ;motor.c: 62:     RC3 = 1;
+[e = _RC3 -> -> 1 `i `b ]
+"63
+[; ;motor.c: 63:     RC4 = 0;
+[e = _RC4 -> -> 0 `i `b ]
+"64
+[; ;motor.c: 64: }
 [e :UE 103 ]
 }
-"61
-[; ;motor.c: 61: void Motor_Izquierda(void)
+"65
+[; ;motor.c: 65: void Motor_Izquierda(void)
 [v _Motor_Izquierda `(v ~T0 @X0 1 ef ]
-"62
-[; ;motor.c: 62: {
+"66
+[; ;motor.c: 66: {
 {
 [e :U _Motor_Izquierda ]
 [f ]
-"63
-[; ;motor.c: 63:     RC0 = 1;
-[e = _RC0 -> -> 1 `i `b ]
-"64
-[; ;motor.c: 64:     RC1 = 0;
-[e = _RC1 -> -> 0 `i `b ]
-"66
-[; ;motor.c: 66:     RC3 = 0;
-[e = _RC3 -> -> 0 `i `b ]
 "67
-[; ;motor.c: 67:     RC4 = 0;
-[e = _RC4 -> -> 0 `i `b ]
+[; ;motor.c: 67:     RC0 = 1;
+[e = _RC0 -> -> 1 `i `b ]
 "68
-[; ;motor.c: 68: }
+[; ;motor.c: 68:     RC1 = 0;
+[e = _RC1 -> -> 0 `i `b ]
+"70
+[; ;motor.c: 70:     RC3 = 0;
+[e = _RC3 -> -> 0 `i `b ]
+"71
+[; ;motor.c: 71:     RC4 = 0;
+[e = _RC4 -> -> 0 `i `b ]
+"72
+[; ;motor.c: 72: }
 [e :UE 104 ]
 }
-"69
-[; ;motor.c: 69: void Motor_Derecha(void)
+"73
+[; ;motor.c: 73: void Motor_Derecha(void)
 [v _Motor_Derecha `(v ~T0 @X0 1 ef ]
-"70
-[; ;motor.c: 70: {
+"74
+[; ;motor.c: 74: {
 {
 [e :U _Motor_Derecha ]
 [f ]
-"71
-[; ;motor.c: 71:     RC0 = 0;
-[e = _RC0 -> -> 0 `i `b ]
-"72
-[; ;motor.c: 72:     RC1 = 0;
-[e = _RC1 -> -> 0 `i `b ]
-"74
-[; ;motor.c: 74:     RC3 = 0;
-[e = _RC3 -> -> 0 `i `b ]
 "75
-[; ;motor.c: 75:     RC4 = 1;
-[e = _RC4 -> -> 1 `i `b ]
+[; ;motor.c: 75:     RC0 = 0;
+[e = _RC0 -> -> 0 `i `b ]
 "76
-[; ;motor.c: 76: }
+[; ;motor.c: 76:     RC1 = 0;
+[e = _RC1 -> -> 0 `i `b ]
+"78
+[; ;motor.c: 78:     RC3 = 0;
+[e = _RC3 -> -> 0 `i `b ]
+"79
+[; ;motor.c: 79:     RC4 = 1;
+[e = _RC4 -> -> 1 `i `b ]
+"80
+[; ;motor.c: 80: }
 [e :UE 105 ]
 }
-"77
-[; ;motor.c: 77: void Motor_Stop(void)
+"81
+[; ;motor.c: 81: void Motor_Stop(void)
 [v _Motor_Stop `(v ~T0 @X0 1 ef ]
-"78
-[; ;motor.c: 78: {
+"82
+[; ;motor.c: 82: {
 {
 [e :U _Motor_Stop ]
 [f ]
-"79
-[; ;motor.c: 79:     RC0 = 0;
-[e = _RC0 -> -> 0 `i `b ]
-"80
-[; ;motor.c: 80:     RC1 = 0;
-[e = _RC1 -> -> 0 `i `b ]
-"82
-[; ;motor.c: 82:     RC3 = 0;
-[e = _RC3 -> -> 0 `i `b ]
 "83
-[; ;motor.c: 83:     RC4 = 0;
-[e = _RC4 -> -> 0 `i `b ]
+[; ;motor.c: 83:     RC0 = 0;
+[e = _RC0 -> -> 0 `i `b ]
 "84
-[; ;motor.c: 84: }
+[; ;motor.c: 84:     RC1 = 0;
+[e = _RC1 -> -> 0 `i `b ]
+"86
+[; ;motor.c: 86:     RC3 = 0;
+[e = _RC3 -> -> 0 `i `b ]
+"87
+[; ;motor.c: 87:     RC4 = 0;
+[e = _RC4 -> -> 0 `i `b ]
+"88
+[; ;motor.c: 88: }
 [e :UE 106 ]
 }

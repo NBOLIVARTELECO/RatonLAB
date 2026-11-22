@@ -1,18 +1,28 @@
 #include <xc.h>
 #include "motor.h"
+#include "ultrasonic.h"
+#include "servo.h"
+#include "navigation.h"
+
 
 // CONFIG
 
 #pragma config FOSC = HS
 #pragma config WDTE = OFF
 #pragma config PWRTE = ON
-#pragma config BOREN = OFF
+#pragma config BOREN = ON
 #pragma config LVP = OFF
 #pragma config CPD = OFF
 #pragma config WRT = OFF
 #pragma config CP = OFF
 
 #define _XTAL_FREQ 20000000
+
+void LED_Boot(void);
+void testUltrasonido(void);
+void testServo(void);
+void Navigation_Update(void);
+void Navigation_Init(void);
 
 // Estados del robot
 typedef enum
@@ -32,73 +42,41 @@ void Sistema_Init(void);
 void main(void)
 {
     Sistema_Init();
-    unsigned int vel =500;
-
+    
     estadoActual = ESTADO_STOP;
 
     while(1)
     {
-        switch(estadoActual)
-        {
-            case ESTADO_STOP:
-
-                Motor_Stop();
-                Motor_SetSpeed(0);
-
-                __delay_ms(1000);
-
-                estadoActual = ESTADO_ADELANTE;
-
-                break;
-
-            case ESTADO_ADELANTE:
-
-                Motor_SetSpeed(vel);
-                Motor_Adelante();
-
-                __delay_ms(3000);
-
-                estadoActual = ESTADO_IZQUIERDA;
-
-                break;
-
-            case ESTADO_IZQUIERDA:
-
-                Motor_SetSpeed(vel);
-                Motor_Izquierda();
-
-                __delay_ms(1500);
-
-                estadoActual = ESTADO_DERECHA;
-
-                break;
-
-            case ESTADO_DERECHA:
-
-                Motor_SetSpeed(vel);
-                Motor_Derecha();
-
-                __delay_ms(1500);
-
-                estadoActual = ESTADO_ATRAS;
-
-                break;
-
-            case ESTADO_ATRAS:
-
-                Motor_SetSpeed(vel);
-                Motor_Atras();
-
-                __delay_ms(3000);
-
-                estadoActual = ESTADO_STOP;
-
-                break;
-        }
+       
+       Navigation_Update();
+    
     }
 }
 
 void Sistema_Init(void)
 {
+    TRISAbits.TRISA0 = 0;
+    RA0 = 0;
+
+    LED_Boot();
     Motor_Init();
+    Ultrasonic_Init();
+    Servo_Init();
+    Navigation_Init();
 }
+void LED_Boot(void)
+{
+    unsigned char i;
+
+    for(i = 0; i < 10; i++)
+    {
+        RA0 = 1;
+        __delay_ms(200);
+
+        RA0 = 0;
+        __delay_ms(200);
+    }
+}
+
+
+

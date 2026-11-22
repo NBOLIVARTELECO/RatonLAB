@@ -72,6 +72,32 @@ PIC16F877A
 ```
 
 ---
+Disposición de pines
+RA0 -> LED STATUS
+
+RA1 -> LCD RS
+RA2 -> LCD E
+RA3 -> LCD D7
+
+RE0 -> LCD D4
+RE1 -> LCD D5
+RE2 -> LCD D6
+
+
+RB0 -> HC-SR04 TRIG
+RB1 -> HC-SR04 ECHO
+RB2 -> SERVO
+
+
+RC0 -> L298 IN1
+RC1 -> L298 IN2
+
+RC2 -> PWM
+
+RC3 -> L298 IN3
+RC4 -> L298 IN4
+
+
 
 # Estrategia de Exploración
 
@@ -286,3 +312,123 @@ lcd.h
 [ ] Navegación
 [ ] Resolución de laberintos
 ```
+
+# Consideraciones de Alimentación y Desacoplo
+
+## Desacoplo del Microcontrolador
+
+El PIC16F877A dispone de dos pares de alimentación:
+
+VDD  (Pin 11)
+
+VSS  (Pin 12)
+
+VDD  (Pin 32)
+
+VSS  (Pin 31)
+
+Se recomienda conectar ambos pares de alimentación y colocar un condensador cerámico de desacoplo por cada par.
+
+100 nF entre Pin 11 y Pin 12
+
+100 nF entre Pin 32 y Pin 31
+
+Estos condensadores deben colocarse físicamente lo más cerca posible del microcontrolador.
+
+### Función
+
+- Filtrado de ruido de alta frecuencia.
+- Estabilidad de alimentación.
+- Prevención de reinicios inesperados.
+- Mejora de la inmunidad frente a ruido generado por motores y servomotores.
+
+---
+
+## Desacoplo de la Etapa de Potencia
+
+El módulo L298N controla motores de corriente continua que generan variaciones importantes de corriente durante arranque, frenado y cambios de dirección.
+
+Se recomienda instalar:
+
+220 µF / 16 V
+
+entre:
+
+VMOTOR y GND
+
+muy cerca de la entrada de alimentación del L298N.
+
+### Función
+
+- Absorber caídas momentáneas de tensión.
+- Reducir fluctuaciones al arrancar los motores.
+- Mejorar la estabilidad general del sistema.
+
+---
+
+## Supresión de Ruido en Motores
+
+Los motores DC generan interferencia electromagnética debido a la conmutación mecánica de las escobillas.
+
+Se recomienda colocar un condensador cerámico:
+
+100 nF
+
+directamente en paralelo con los terminales de cada motor.
+
+Terminal A \-\-\-\-\|\|\-\-\-\- Terminal B
+
+              100 nF
+
+### Función
+
+- Reducción de interferencias EMI.
+- Menor ruido eléctrico sobre la alimentación.
+- Menor afectación sobre el sensor ultrasónico, servomotor y LCD.
+
+---
+
+## Recomendación de Masa Común
+
+Todos los subsistemas deben compartir referencia de tierra (GND).
+
+PIC16F877A
+
+LCD
+
+HC\-SR04
+
+Servomotor
+
+L298N
+
+Fuente de motores
+
+deben estar unidos mediante una masa común.
+
+La ausencia de una referencia común puede producir errores de medición, comportamiento errático de los motores o fallos de comunicación entre módulos.
+
+---
+
+## Configuración Utilizada en el Proyecto
+
+PIC16F877A
+
+??? 100 nF (VDD\-VSS lado 1)
+
+??? 100 nF (VDD\-VSS lado 2)
+
+L298N
+
+??? 220 µF / 16 V
+
+??? 100 nF cerámico
+
+Motor izquierdo
+
+??? 100 nF entre terminales
+
+Motor derecho
+
+??? 100 nF entre terminales
+

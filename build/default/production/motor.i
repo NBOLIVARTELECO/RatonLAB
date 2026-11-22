@@ -1913,6 +1913,10 @@ void Motor_Init(void)
     T2CON = 0x04;
 
     CCPR1L = 0;
+
+    TMR2 = 0;
+
+    PIR1bits.TMR2IF = 0;
 }
 void Motor_SetSpeed(unsigned int duty)
 {

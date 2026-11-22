@@ -20,6 +20,10 @@
       <itemPath>newmain.c</itemPath>
       <itemPath>motor.h</itemPath>
       <itemPath>motor.c</itemPath>
+      <itemPath>ultrasonic.h</itemPath>
+      <itemPath>ultrasonic.c</itemPath>
+      <itemPath>servo.c</itemPath>
+      <itemPath>navigation.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>

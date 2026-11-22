@@ -1894,19 +1894,61 @@ void Motor_Derecha(void);
 
 void Motor_Stop(void);
 # 3 "newmain.c" 2
+# 1 "./ultrasonic.h" 1
+
+
+
+void Ultrasonic_Init(void);
+unsigned int Ultrasonic_Read(void);
+# 4 "newmain.c" 2
+# 1 "./servo.h" 1
+
+
+
+void Servo_Init(void);
+
+void Servo_Izquierda(void);
+void Servo_Centro(void);
+void Servo_Derecha(void);
+# 5 "newmain.c" 2
+# 1 "./navigation.h" 1
+
+
+
+typedef struct
+{
+    unsigned int izquierda;
+    unsigned int centro;
+    unsigned int derecha;
+
+} Distancias;
+
+extern Distancias entorno;
+
+void Navigation_Init(void);
+
+void Navigation_Update(void);
+# 6 "newmain.c" 2
+
 
 
 
 #pragma config FOSC = HS
 #pragma config WDTE = OFF
 #pragma config PWRTE = ON
-#pragma config BOREN = OFF
+#pragma config BOREN = ON
 #pragma config LVP = OFF
 #pragma config CPD = OFF
 #pragma config WRT = OFF
 #pragma config CP = OFF
 
 
+
+void LED_Boot(void);
+void testUltrasonido(void);
+void testServo(void);
+void Navigation_Update(void);
+void Navigation_Init(void);
 
 
 typedef enum
@@ -1926,73 +1968,85 @@ void Sistema_Init(void);
 void main(void)
 {
     Sistema_Init();
-    unsigned int vel =500;
 
     estadoActual = ESTADO_STOP;
 
     while(1)
     {
-        switch(estadoActual)
+
+       Navigation_Update();
+       if((entorno.centro < 15) &&
+       (entorno.izquierda < 15) &&
+       (entorno.derecha < 15))
         {
-            case ESTADO_STOP:
-
-                Motor_Stop();
-                Motor_SetSpeed(0);
-
-                _delay((unsigned long)((1000)*(20000000/4000.0)));
-
-                estadoActual = ESTADO_ADELANTE;
-
-                break;
-
-            case ESTADO_ADELANTE:
-
-                Motor_SetSpeed(vel);
-                Motor_Adelante();
-
-                _delay((unsigned long)((3000)*(20000000/4000.0)));
-
-                estadoActual = ESTADO_IZQUIERDA;
-
-                break;
-
-            case ESTADO_IZQUIERDA:
-
-                Motor_SetSpeed(vel);
-                Motor_Izquierda();
-
-                _delay((unsigned long)((1500)*(20000000/4000.0)));
-
-                estadoActual = ESTADO_DERECHA;
-
-                break;
-
-            case ESTADO_DERECHA:
-
-                Motor_SetSpeed(vel);
-                Motor_Derecha();
-
-                _delay((unsigned long)((1500)*(20000000/4000.0)));
-
-                estadoActual = ESTADO_ATRAS;
-
-                break;
-
-            case ESTADO_ATRAS:
-
-                Motor_SetSpeed(vel);
-                Motor_Atras();
-
-                _delay((unsigned long)((3000)*(20000000/4000.0)));
-
-                estadoActual = ESTADO_STOP;
-
-                break;
+         RA0 = 1;
+        }
+        else
+        {
+            RA0 = 0;
         }
     }
 }
 
 void Sistema_Init(void)
 {
+    TRISAbits.TRISA0 = 0;
+    RA0 = 0;
+
+    LED_Boot();
     Motor_Init();
+    Ultrasonic_Init();
+    Servo_Init();
+    Navigation_Init();
+}
+void LED_Boot(void)
+{
+    unsigned char i;
+
+    for(i = 0; i < 10; i++)
+    {
+        RA0 = 1;
+        _delay((unsigned long)((200)*(20000000/4000.0)));
+
+        RA0 = 0;
+        _delay((unsigned long)((200)*(20000000/4000.0)));
+    }
+}
+
+
+
+void testServo(void){
+
+    Servo_Izquierda();
+    _delay((unsigned long)((1000)*(20000000/4000.0)));
+
+    Servo_Centro();
+    _delay((unsigned long)((1000)*(20000000/4000.0)));
+
+    Servo_Derecha();
+    _delay((unsigned long)((1000)*(20000000/4000.0)));
+
+    Servo_Centro();
+    _delay((unsigned long)((1000)*(20000000/4000.0)));
+
+}
+
+void testUltrasonido(void){
+        unsigned int distancia = Ultrasonic_Read();
+
+        if(distancia > 15)
+        {
+            RA0 = 0;
+            Motor_SetSpeed(400);
+            Motor_Adelante();
+        }
+        else
+        {
+            RA0 = 1;
+
+            Motor_Stop();
+        }
+
+        _delay((unsigned long)((200)*(20000000/4000.0)));
+
 }
