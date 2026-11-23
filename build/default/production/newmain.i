@@ -1893,6 +1893,8 @@ void Motor_Izquierda(void);
 void Motor_Derecha(void);
 
 void Motor_Stop(void);
+void Motor_CorregirIzquierda(void);
+void Motor_CorregirDerecha(void);
 # 3 "newmain.c" 2
 # 1 "./ultrasonic.h" 1
 
@@ -1927,8 +1929,25 @@ extern Distancias entorno;
 
 void Navigation_Init(void);
 
-void Navigation_Update(void);
+void Navigation_Scan(void);
+
+void Navigation_Decision(void);
 # 6 "newmain.c" 2
+# 1 "./lcd.h" 1
+
+
+
+void LCD_Init(void);
+void LCD_Clear(void);
+
+void LCD_Cmd(unsigned char cmd);
+void LCD_Data(unsigned char data);
+
+void LCD_SetCursor(unsigned char row, unsigned char col);
+
+void LCD_Write_Char(char c);
+void LCD_Write_String(const char *str);
+# 7 "newmain.c" 2
 
 
 
@@ -1946,7 +1965,7 @@ void Navigation_Update(void);
 
 void LED_Boot(void);
 void testUltrasonido(void);
-void testServo(void);
+void testMotores(void);
 void Navigation_Update(void);
 void Navigation_Init(void);
 
@@ -1970,26 +1989,25 @@ void main(void)
     Sistema_Init();
 
     estadoActual = ESTADO_STOP;
-
+    unsigned int contador = 0;
     while(1)
     {
 
-       Navigation_Update();
-       if((entorno.centro < 15) &&
-       (entorno.izquierda < 15) &&
-       (entorno.derecha < 15))
-        {
-         RA0 = 1;
-        }
-        else
-        {
-            RA0 = 0;
-        }
+        Navigation_Scan();
+
+
+
+
+
+
+        _delay((unsigned long)((500)*(20000000/4000.0)));
+
     }
 }
 
 void Sistema_Init(void)
 {
+    ADCON1 = 0x07;
     TRISAbits.TRISA0 = 0;
     RA0 = 0;
 
@@ -1998,6 +2016,7 @@ void Sistema_Init(void)
     Ultrasonic_Init();
     Servo_Init();
     Navigation_Init();
+    LCD_Init();
 }
 void LED_Boot(void)
 {
@@ -2011,42 +2030,4 @@ void LED_Boot(void)
         RA0 = 0;
         _delay((unsigned long)((200)*(20000000/4000.0)));
     }
-}
-
-
-
-void testServo(void){
-
-    Servo_Izquierda();
-    _delay((unsigned long)((1000)*(20000000/4000.0)));
-
-    Servo_Centro();
-    _delay((unsigned long)((1000)*(20000000/4000.0)));
-
-    Servo_Derecha();
-    _delay((unsigned long)((1000)*(20000000/4000.0)));
-
-    Servo_Centro();
-    _delay((unsigned long)((1000)*(20000000/4000.0)));
-
-}
-
-void testUltrasonido(void){
-        unsigned int distancia = Ultrasonic_Read();
-
-        if(distancia > 15)
-        {
-            RA0 = 0;
-            Motor_SetSpeed(400);
-            Motor_Adelante();
-        }
-        else
-        {
-            RA0 = 1;
-
-            Motor_Stop();
-        }
-
-        _delay((unsigned long)((200)*(20000000/4000.0)));
-
 }

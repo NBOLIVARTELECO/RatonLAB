@@ -13,6 +13,8 @@ extern Distancias entorno;
 
 void Navigation_Init(void);
 
-void Navigation_Update(void);
+void Navigation_Scan(void);
+
+void Navigation_Decision(void);
 
 #endif

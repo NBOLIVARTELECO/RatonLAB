@@ -12,5 +12,7 @@ void Motor_Izquierda(void);
 void Motor_Derecha(void);
 
 void Motor_Stop(void);
+void Motor_CorregirIzquierda(void);
+void Motor_CorregirDerecha(void);
 
 #endif

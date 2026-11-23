@@ -375,8 +375,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;motor.c: 68:     RC1 = 0;
 [e = _RC1 -> -> 0 `i `b ]
 "70
-[; ;motor.c: 70:     RC3 = 0;
-[e = _RC3 -> -> 0 `i `b ]
+[; ;motor.c: 70:     RC3 = 1;
+[e = _RC3 -> -> 1 `i `b ]
 "71
 [; ;motor.c: 71:     RC4 = 0;
 [e = _RC4 -> -> 0 `i `b ]
@@ -396,8 +396,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;motor.c: 75:     RC0 = 0;
 [e = _RC0 -> -> 0 `i `b ]
 "76
-[; ;motor.c: 76:     RC1 = 0;
-[e = _RC1 -> -> 0 `i `b ]
+[; ;motor.c: 76:     RC1 = 1;
+[e = _RC1 -> -> 1 `i `b ]
 "78
 [; ;motor.c: 78:     RC3 = 0;
 [e = _RC3 -> -> 0 `i `b ]
@@ -409,26 +409,74 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 105 ]
 }
 "81
-[; ;motor.c: 81: void Motor_Stop(void)
-[v _Motor_Stop `(v ~T0 @X0 1 ef ]
+[; ;motor.c: 81: void Motor_CorregirDerecha(void)
+[v _Motor_CorregirDerecha `(v ~T0 @X0 1 ef ]
 "82
 [; ;motor.c: 82: {
 {
+[e :U _Motor_CorregirDerecha ]
+[f ]
+"84
+[; ;motor.c: 84:     RC0 = 1;
+[e = _RC0 -> -> 1 `i `b ]
+"85
+[; ;motor.c: 85:     RC1 = 0;
+[e = _RC1 -> -> 0 `i `b ]
+"88
+[; ;motor.c: 88:     RC3 = 0;
+[e = _RC3 -> -> 0 `i `b ]
+"89
+[; ;motor.c: 89:     RC4 = 0;
+[e = _RC4 -> -> 0 `i `b ]
+"90
+[; ;motor.c: 90: }
+[e :UE 106 ]
+}
+"91
+[; ;motor.c: 91: void Motor_CorregirIzquierda(void)
+[v _Motor_CorregirIzquierda `(v ~T0 @X0 1 ef ]
+"92
+[; ;motor.c: 92: {
+{
+[e :U _Motor_CorregirIzquierda ]
+[f ]
+"94
+[; ;motor.c: 94:     RC0 = 0;
+[e = _RC0 -> -> 0 `i `b ]
+"95
+[; ;motor.c: 95:     RC1 = 0;
+[e = _RC1 -> -> 0 `i `b ]
+"98
+[; ;motor.c: 98:     RC3 = 0;
+[e = _RC3 -> -> 0 `i `b ]
+"99
+[; ;motor.c: 99:     RC4 = 1;
+[e = _RC4 -> -> 1 `i `b ]
+"100
+[; ;motor.c: 100: }
+[e :UE 107 ]
+}
+"101
+[; ;motor.c: 101: void Motor_Stop(void)
+[v _Motor_Stop `(v ~T0 @X0 1 ef ]
+"102
+[; ;motor.c: 102: {
+{
 [e :U _Motor_Stop ]
 [f ]
-"83
-[; ;motor.c: 83:     RC0 = 0;
+"103
+[; ;motor.c: 103:     RC0 = 0;
 [e = _RC0 -> -> 0 `i `b ]
-"84
-[; ;motor.c: 84:     RC1 = 0;
+"104
+[; ;motor.c: 104:     RC1 = 0;
 [e = _RC1 -> -> 0 `i `b ]
-"86
-[; ;motor.c: 86:     RC3 = 0;
+"106
+[; ;motor.c: 106:     RC3 = 0;
 [e = _RC3 -> -> 0 `i `b ]
-"87
-[; ;motor.c: 87:     RC4 = 0;
+"107
+[; ;motor.c: 107:     RC4 = 0;
 [e = _RC4 -> -> 0 `i `b ]
-"88
-[; ;motor.c: 88: }
-[e :UE 106 ]
+"108
+[; ;motor.c: 108: }
+[e :UE 108 ]
 }

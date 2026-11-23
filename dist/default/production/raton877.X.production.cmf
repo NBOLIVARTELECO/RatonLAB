@@ -11,32 +11,53 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
+$C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
 end_init CODE 0 0 0 3 2 1
 config CONFIG 4 2007 2007 1 2 1
 $dist/default/production\raton877.X.production.o
-cinit CODE 0 7F3 7F3 D 2 1
-text1 CODE 0 57D 57D 20 2 1
-text2 CODE 0 54C 54C A 2 1
-text3 CODE 0 545 545 7 2 1
-text4 CODE 0 556 556 F 2 1
-text5 CODE 0 565 565 18 2 1
-text6 CODE 0 62A 62A 2A 2 1
-text7 CODE 0 725 725 CE 2 1
-text8 CODE 0 6C7 6C7 5E 2 1
-text9 CODE 0 685 685 42 2 1
-text10 CODE 0 5DF 5DF 21 2 1
-text11 CODE 0 5BE 5BE 21 2 1
-text12 CODE 0 59D 59D 21 2 1
-text13 CODE 0 600 600 2A 2 1
-text14 CODE 0 53E 53E 7 2 1
-text15 CODE 0 537 537 7 2 1
-text16 CODE 0 530 530 7 2 1
-text17 CODE 0 529 529 7 2 1
-maintext CODE 0 654 654 31 2 1
+cinit CODE 0 7EB 7EB 15 2 1
+text1 CODE 0 291 291 27 2 1
+text2 CODE 0 104 104 A 2 1
+text3 CODE 0 F5 F5 7 2 1
+text4 CODE 0 30C 30C 31 2 1
+text5 CODE 0 142 142 18 2 1
+text6 CODE 0 2E2 2E2 2A 2 1
+text7 CODE 0 497 497 66 2 1
+text8 CODE 0 4FD 4FD 6A 2 1
+text9 CODE 0 439 439 5E 2 1
+text10 CODE 0 1BC 1BC 21 2 1
+text11 CODE 0 19B 19B 21 2 1
+text12 CODE 0 17A 17A 21 2 1
+text13 CODE 0 6C5 6C5 126 2 1
+text14 CODE 0 2B8 2B8 2A 2 1
+text15 CODE 0 EE EE 7 2 1
+text16 CODE 0 E7 E7 7 2 1
+text17 CODE 0 E0 E0 7 2 1
+text18 CODE 0 D9 D9 7 2 1
+text19 CODE 0 D2 D2 7 2 1
+text20 CODE 0 CB CB 7 2 1
+text21 CODE 0 375 375 3B 2 1
+text22 CODE 0 223 223 23 2 1
+text23 CODE 0 246 246 25 2 1
+text24 CODE 0 601 601 C4 2 1
+text25 CODE 0 567 567 9A 2 1
+text26 CODE 0 CA CA 1 2 1
+text27 CODE 0 33D 33D 38 2 1
+text28 CODE 0 3B0 3B0 42 2 1
+text29 CODE 0 26B 26B 26 2 1
+text30 CODE 0 200 200 23 2 1
+text31 CODE 0 12E 12E 14 2 1
+text32 CODE 0 11E 11E 10 2 1
+text33 CODE 0 1DD 1DD 23 2 1
+text34 CODE 0 3F2 3F2 47 2 1
+text35 CODE 0 10E 10E 10 2 1
+maintext CODE 0 15A 15A 20 2 1
 cstackCOMMON COMMON 1 70 70 E 1 1
-cstackBANK0 BANK0 1 27 27 3 1 1
-bssBANK0 BANK0 1 20 20 7 1 1
+cstackBANK0 BANK0 1 20 20 3A 1 1
+bssBANK0 BANK0 1 5A 5A F 1 1
+bssBANK1 BANK1 1 A0 A0 20 1 1
+strings STRING 0 3 3 48 2 1
+clrtext CODE 0 FC FC 8 2 1
 config CONFIG 4 2007 2007 1 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -44,29 +65,29 @@ config CONFIG 4 2007 2007 1 2 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 2A-6F 1
-RAM A0-EF 1
+RAM 69-6F 1
+RAM C0-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
-BANK0 2A-6F 1
-BANK1 A0-EF 1
+BANK0 69-6F 1
+BANK1 C0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 3-528 2
+CONST 4B-C9 2
 CONST 800-1FFF 2
-ENTRY 3-528 2
+ENTRY 4B-C9 2
 ENTRY 800-1FFF 2
 IDLOC 2000-2003 2
-CODE 3-528 2
+CODE 4B-C9 2
 CODE 800-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-10F 1
 SFR3 180-18F 1
 EEDATA 2100-21FF 2
-STRCODE 3-528 2
+STRCODE 4B-C9 2
 STRCODE 800-1FFF 2
-STRING 3-528 2
+STRING 4B-C9 2
 STRING 800-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -82,234 +103,447 @@ STRING 800-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\raton877.X.production.o
-7F3 cinit CODE >891:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7F3 cinit CODE >894:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7F3 cinit CODE >908:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7F4 cinit CODE >909:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7F5 cinit CODE >910:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7F6 cinit CODE >911:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7F7 cinit CODE >912:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7F8 cinit CODE >913:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7F9 cinit CODE >914:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7FA cinit CODE >915:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7FB cinit CODE >916:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7FC cinit CODE >922:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7FC cinit CODE >924:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-7FD cinit CODE >925:C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_1.s
-529 text17 CODE >49:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-529 text17 CODE >51:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-52C text17 CODE >52:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-52D text17 CODE >54:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-52E text17 CODE >55:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-52F text17 CODE >56:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-530 text16 CODE >57:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-530 text16 CODE >59:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-533 text16 CODE >60:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-534 text16 CODE >62:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-535 text16 CODE >63:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-536 text16 CODE >64:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-537 text15 CODE >73:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-537 text15 CODE >75:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-53A text15 CODE >76:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-53B text15 CODE >78:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-53C text15 CODE >79:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-53D text15 CODE >80:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-53E text14 CODE >65:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-53E text14 CODE >67:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-541 text14 CODE >68:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-542 text14 CODE >70:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-543 text14 CODE >71:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-544 text14 CODE >72:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-600 text13 CODE >39:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-600 text13 CODE >41:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-603 text13 CODE >41:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-605 text13 CODE >41:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-609 text13 CODE >42:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-60D text13 CODE >44:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-611 text13 CODE >44:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-614 text13 CODE >44:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-61B text13 CODE >46:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-61D text13 CODE >47:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-621 text13 CODE >47:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-624 text13 CODE >47:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-626 text13 CODE >47:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-629 text13 CODE >48:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-59D text12 CODE >26:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-59D text12 CODE >30:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-59E text12 CODE >32:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5A1 text12 CODE >33:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5AA text12 CODE >35:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5AD text12 CODE >36:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5B5 text12 CODE >37:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5B9 text12 CODE >37:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5BD text12 CODE >38:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5BE text11 CODE >40:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5BE text11 CODE >44:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5BF text11 CODE >46:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5C2 text11 CODE >47:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5CB text11 CODE >49:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5CE text11 CODE >50:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5D6 text11 CODE >51:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5DA text11 CODE >51:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5DE text11 CODE >52:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5DF text10 CODE >12:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5DF text10 CODE >16:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5E0 text10 CODE >18:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5E3 text10 CODE >19:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5EC text10 CODE >21:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5EF text10 CODE >22:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5F7 text10 CODE >23:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5FB text10 CODE >23:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-5FF text10 CODE >24:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-685 text9 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-685 text9 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-687 text9 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-68D text9 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-68F text9 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-690 text9 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-691 text9 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-695 text9 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-697 text9 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-699 text9 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-69D text9 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-69E text9 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6A2 text9 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6A4 text9 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6A6 text9 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6AA text9 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6AE text9 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6B1 text9 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6B4 text9 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6B5 text9 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6B6 text9 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6BA text9 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6BC text9 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6C2 text9 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6C6 text9 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-6C7 text8 CODE >19:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6C7 text8 CODE >24:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6CA text8 CODE >25:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6CF text8 CODE >26:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6D2 text8 CODE >28:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6D6 text8 CODE >30:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6D7 text8 CODE >33:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6DD text8 CODE >34:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6E2 text8 CODE >30:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6E9 text8 CODE >30:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6ED text8 CODE >30:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6F4 text8 CODE >36:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6F5 text8 CODE >37:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6F6 text8 CODE >39:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6F8 text8 CODE >41:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6FC text8 CODE >43:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-6FC text8 CODE >44:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-703 text8 CODE >43:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-707 text8 CODE >43:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-70E text8 CODE >46:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-70F text8 CODE >48:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-713 text8 CODE >50:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-724 text8 CODE >51:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-725 text7 CODE >17:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-725 text7 CODE >19:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-72A text7 CODE >20:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-735 text7 CODE >22:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-73A text7 CODE >23:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-745 text7 CODE >25:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-74A text7 CODE >26:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-755 text7 CODE >29:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-758 text7 CODE >29:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-75A text7 CODE >29:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-761 text7 CODE >29:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-763 text7 CODE >29:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-76A text7 CODE >29:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-76C text7 CODE >29:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-770 text7 CODE >33:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-779 text7 CODE >34:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-77E text7 CODE >36:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-78D text7 CODE >42:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-790 text7 CODE >42:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-792 text7 CODE >42:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-796 text7 CODE >44:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-798 text7 CODE >44:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-79C text7 CODE >44:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7A0 text7 CODE >46:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7A9 text7 CODE >47:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7AE text7 CODE >48:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7AF text7 CODE >51:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7B8 text7 CODE >52:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7BE text7 CODE >59:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7C1 text7 CODE >59:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7C3 text7 CODE >59:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7C7 text7 CODE >61:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7D1 text7 CODE >64:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7D4 text7 CODE >64:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7D6 text7 CODE >64:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7DA text7 CODE >66:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7E4 text7 CODE >71:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7ED text7 CODE >72:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-7F2 text7 CODE >74:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-62A text6 CODE >76:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-62A text6 CODE >80:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-62B text6 CODE >82:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-62E text6 CODE >83:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-63B text6 CODE >85:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-63E text6 CODE >86:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-64B text6 CODE >87:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-64F text6 CODE >87:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-653 text6 CODE >88:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-565 text5 CODE >16:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-565 text5 CODE >18:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-568 text5 CODE >19:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-569 text5 CODE >20:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-56A text5 CODE >21:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-56B text5 CODE >22:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-56C text5 CODE >24:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-56F text5 CODE >27:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-573 text5 CODE >29:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-577 text5 CODE >31:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-579 text5 CODE >33:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-57A text5 CODE >35:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-57B text5 CODE >37:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-57C text5 CODE >38:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
-556 text4 CODE >11:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-556 text4 CODE >13:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-55C text4 CODE >14:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-560 text4 CODE >15:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-564 text4 CODE >16:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-545 text3 CODE >6:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-545 text3 CODE >8:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-548 text3 CODE >9:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-54B text3 CODE >10:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
-54C text2 CODE >6:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-54C text2 CODE >8:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-54F text2 CODE >9:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-550 text2 CODE >11:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-553 text2 CODE >13:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-555 text2 CODE >17:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
-57D text1 CODE >65:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-57D text1 CODE >67:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-580 text1 CODE >68:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-583 text1 CODE >70:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-588 text1 CODE >71:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-58D text1 CODE >72:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-592 text1 CODE >73:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-597 text1 CODE >74:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-59C text1 CODE >75:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-654 maintext CODE >42:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-654 maintext CODE >44:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-659 maintext CODE >46:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-65C maintext CODE >51:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-661 maintext CODE >52:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-666 maintext CODE >52:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-668 maintext CODE >52:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-66F maintext CODE >52:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-671 maintext CODE >52:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-678 maintext CODE >52:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-67A maintext CODE >52:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-67E maintext CODE >56:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-67F maintext CODE >57:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-680 maintext CODE >58:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-680 maintext CODE >60:C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+7EB cinit CODE >1166:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7EB cinit CODE >1169:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7EB cinit CODE >1222:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7EC cinit CODE >1223:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7ED cinit CODE >1224:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7EE cinit CODE >1225:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7EF cinit CODE >1226:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7F4 cinit CODE >1229:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7F5 cinit CODE >1230:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7F6 cinit CODE >1231:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7F7 cinit CODE >1232:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7FC cinit CODE >1238:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7FC cinit CODE >1240:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+7FD cinit CODE >1241:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+10E text35 CODE >14:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+10E text35 CODE >16:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+111 text35 CODE >17:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+115 text35 CODE >19:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+118 text35 CODE >20:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+11D text35 CODE >21:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+3F2 text34 CODE >23:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+3F3 text34 CODE >25:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+3FD text34 CODE >26:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+400 text34 CODE >26:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+403 text34 CODE >26:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+40F text34 CODE >27:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+412 text34 CODE >27:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+415 text34 CODE >27:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+421 text34 CODE >28:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+424 text34 CODE >28:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+427 text34 CODE >28:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+433 text34 CODE >30:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+438 text34 CODE >31:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+1DD text33 CODE >33:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+1DE text33 CODE >35:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+1E1 text33 CODE >37:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+1E4 text33 CODE >37:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+1E7 text33 CODE >37:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+1EF text33 CODE >38:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+1F6 text33 CODE >40:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+1FF text33 CODE >41:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+11E text32 CODE >53:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+11E text32 CODE >55:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+124 text32 CODE >56:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+12D text32 CODE >57:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+12E text31 CODE >59:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+12F text31 CODE >63:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+134 text31 CODE >64:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+138 text31 CODE >66:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+13B text31 CODE >68:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+141 text31 CODE >69:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+200 text30 CODE >43:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+201 text30 CODE >45:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+204 text30 CODE >47:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+207 text30 CODE >47:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+20A text30 CODE >47:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+212 text30 CODE >48:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+219 text30 CODE >50:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+222 text30 CODE >51:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+26B text29 CODE >76:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+26B text29 CODE >78:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+26C text29 CODE >80:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+27C text29 CODE >80:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+280 text29 CODE >78:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+28C text29 CODE >78:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+290 text29 CODE >82:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+3B0 text28 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3B0 text28 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3B2 text28 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3B8 text28 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3BA text28 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3BB text28 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3BC text28 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3C0 text28 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3C2 text28 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3C4 text28 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3C8 text28 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3C9 text28 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3CD text28 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3CF text28 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3D1 text28 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3D5 text28 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3D9 text28 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3DC text28 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3DF text28 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3E0 text28 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3E1 text28 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3E5 text28 CODE >26:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3E7 text28 CODE >27:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3ED text28 CODE >29:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+3F1 text28 CODE >30:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+33D text27 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+33D text27 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+343 text27 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+345 text27 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+346 text27 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+347 text27 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+34B text27 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+34D text27 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+34F text27 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+353 text27 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+355 text27 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+359 text27 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+35D text27 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+360 text27 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+363 text27 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+364 text27 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+368 text27 CODE >21:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+36A text27 CODE >22:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+370 text27 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+374 text27 CODE >25:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+CA text26 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\putch.c
+CA text26 CODE >9:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\putch.c
+567 text25 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+567 text25 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+573 text25 CODE >13:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+579 text25 CODE >14:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+57A text25 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+57E text25 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+596 text25 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+5A8 text25 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+5BC text25 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+5C0 text25 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+5C4 text25 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+5D2 text25 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+5E0 text25 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+5EE text25 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+5F2 text25 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+5FE text25 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+600 text25 CODE >24:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+601 text24 CODE >1177:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+601 text24 CODE >1201:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+60D text24 CODE >1201:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+611 text24 CODE >1202:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+615 text24 CODE >1204:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+619 text24 CODE >1205:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+61D text24 CODE >1291:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+621 text24 CODE >1439:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+629 text24 CODE >1439:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+62D text24 CODE >1495:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+63B text24 CODE >1497:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+640 text24 CODE >1498:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+641 text24 CODE >1523:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+641 text24 CODE >1525:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+643 text24 CODE >1527:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+659 text24 CODE >1528:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+66E text24 CODE >1532:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+67A text24 CODE >1534:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+692 text24 CODE >1533:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+699 text24 CODE >1589:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+6A1 text24 CODE >1589:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+6A4 text24 CODE >1806:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+6AB text24 CODE >1811:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+6C4 text24 CODE >1814:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+246 text23 CODE >1817:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+246 text23 CODE >1822:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+24A text23 CODE >1826:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+24B text23 CODE >1830:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+25A text23 CODE >1826:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+262 text23 CODE >1826:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+266 text23 CODE >1835:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+26A text23 CODE >1840:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+223 text22 CODE >9:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+223 text22 CODE >15:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+227 text22 CODE >16:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+22B text22 CODE >17:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+22D text22 CODE >18:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+22F text22 CODE >19:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+23C text22 CODE >20:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+245 text22 CODE >23:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+375 text21 CODE >186:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+375 text21 CODE >190:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+37A text21 CODE >192:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+382 text21 CODE >193:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+38F text21 CODE >195:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+39E text21 CODE >197:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+3A6 text21 CODE >198:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+3AF text21 CODE >199:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+CB text20 CODE >49:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+CB text20 CODE >51:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+CE text20 CODE >52:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+CF text20 CODE >54:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+D0 text20 CODE >55:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+D1 text20 CODE >56:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+D2 text19 CODE >57:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+D2 text19 CODE >59:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+D5 text19 CODE >60:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+D6 text19 CODE >62:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+D7 text19 CODE >63:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+D8 text19 CODE >64:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+D9 text18 CODE >81:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+D9 text18 CODE >84:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+DC text18 CODE >85:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+DD text18 CODE >88:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+DE text18 CODE >89:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+DF text18 CODE >90:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+E0 text17 CODE >91:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+E0 text17 CODE >94:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+E3 text17 CODE >95:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+E4 text17 CODE >98:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+E5 text17 CODE >99:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+E6 text17 CODE >100:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+E7 text16 CODE >73:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+E7 text16 CODE >75:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+EA text16 CODE >76:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+EB text16 CODE >78:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+EC text16 CODE >79:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+ED text16 CODE >80:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+EE text15 CODE >65:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+EE text15 CODE >67:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+F1 text15 CODE >68:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+F2 text15 CODE >70:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+F3 text15 CODE >71:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+F4 text15 CODE >72:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2B8 text14 CODE >39:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2B8 text14 CODE >41:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2BB text14 CODE >41:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2BD text14 CODE >41:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2C1 text14 CODE >42:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2C5 text14 CODE >44:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2C9 text14 CODE >44:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2CC text14 CODE >44:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2D3 text14 CODE >46:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2D5 text14 CODE >47:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2D9 text14 CODE >47:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2DC text14 CODE >47:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2DE text14 CODE >47:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+2E1 text14 CODE >48:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+6C5 text13 CODE >77:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+6C5 text13 CODE >81:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+6CC text13 CODE >83:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+6D5 text13 CODE >84:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+6DA text13 CODE >86:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+6E7 text13 CODE >88:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+6EB text13 CODE >90:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+6F0 text13 CODE >91:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+6F2 text13 CODE >96:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+6F8 text13 CODE >98:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+701 text13 CODE >99:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+706 text13 CODE >101:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+713 text13 CODE >103:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+717 text13 CODE >105:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+71D text13 CODE >111:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+723 text13 CODE >113:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+72C text13 CODE >114:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+731 text13 CODE >116:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+73E text13 CODE >118:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+742 text13 CODE >120:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+748 text13 CODE >127:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+74B text13 CODE >127:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+74D text13 CODE >127:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+754 text13 CODE >127:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+756 text13 CODE >127:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+75D text13 CODE >127:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+75F text13 CODE >127:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+763 text13 CODE >131:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+765 text13 CODE >132:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+767 text13 CODE >133:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+768 text13 CODE >137:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+76B text13 CODE >137:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+76D text13 CODE >137:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+771 text13 CODE >139:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+773 text13 CODE >139:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+777 text13 CODE >139:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+77B text13 CODE >141:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+77D text13 CODE >142:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+77F text13 CODE >143:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+780 text13 CODE >144:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+780 text13 CODE >146:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+782 text13 CODE >147:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+785 text13 CODE >154:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+788 text13 CODE >154:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+78A text13 CODE >154:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+78E text13 CODE >156:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+797 text13 CODE >159:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+79C text13 CODE >161:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+7AA text13 CODE >167:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+7AD text13 CODE >167:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+7AF text13 CODE >167:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+7B3 text13 CODE >169:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+7BC text13 CODE >172:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+7C1 text13 CODE >174:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+7CF text13 CODE >180:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+7D8 text13 CODE >181:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+7DD text13 CODE >183:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+7EA text13 CODE >184:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+17A text12 CODE >26:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+17A text12 CODE >30:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+17B text12 CODE >32:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+17E text12 CODE >33:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+187 text12 CODE >35:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+18A text12 CODE >36:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+192 text12 CODE >37:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+196 text12 CODE >37:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+19A text12 CODE >38:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+19B text11 CODE >40:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+19B text11 CODE >44:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+19C text11 CODE >46:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+19F text11 CODE >47:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1A8 text11 CODE >49:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1AB text11 CODE >50:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1B3 text11 CODE >51:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1B7 text11 CODE >51:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1BB text11 CODE >52:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1BC text10 CODE >12:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1BC text10 CODE >16:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1BD text10 CODE >18:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1C0 text10 CODE >19:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1C9 text10 CODE >21:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1CC text10 CODE >22:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1D4 text10 CODE >23:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1D8 text10 CODE >23:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+1DC text10 CODE >24:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+439 text9 CODE >19:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+439 text9 CODE >24:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+43C text9 CODE >25:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+441 text9 CODE >26:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+444 text9 CODE >28:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+448 text9 CODE >30:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+449 text9 CODE >33:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+44F text9 CODE >34:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+454 text9 CODE >30:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+45B text9 CODE >30:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+45F text9 CODE >30:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+466 text9 CODE >36:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+467 text9 CODE >37:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+468 text9 CODE >39:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+46A text9 CODE >41:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+46E text9 CODE >43:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+46E text9 CODE >44:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+475 text9 CODE >43:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+479 text9 CODE >43:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+480 text9 CODE >46:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+481 text9 CODE >48:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+485 text9 CODE >50:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+496 text9 CODE >51:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+4FD text8 CODE >53:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+4FD text8 CODE >55:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+502 text8 CODE >56:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+510 text8 CODE >58:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+51B text8 CODE >60:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+520 text8 CODE >62:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+525 text8 CODE >63:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+533 text8 CODE >65:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+53E text8 CODE >67:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+543 text8 CODE >69:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+548 text8 CODE >70:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+556 text8 CODE >72:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+561 text8 CODE >74:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+566 text8 CODE >75:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+497 text7 CODE >84:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+497 text7 CODE >86:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+49A text7 CODE >87:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+49B text7 CODE >88:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+49C text7 CODE >90:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+49D text7 CODE >91:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+49E text7 CODE >92:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+49F text7 CODE >94:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4A2 text7 CODE >95:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4A3 text7 CODE >97:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4AC text7 CODE >99:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4B2 text7 CODE >100:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4BB text7 CODE >102:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4C1 text7 CODE >103:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4C8 text7 CODE >105:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4CE text7 CODE >106:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4D5 text7 CODE >108:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4DB text7 CODE >110:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4E1 text7 CODE >111:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4E7 text7 CODE >112:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4ED text7 CODE >113:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4F3 text7 CODE >115:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+4FC text7 CODE >116:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+2E2 text6 CODE >77:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+2E2 text6 CODE >81:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+2E3 text6 CODE >83:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+2E6 text6 CODE >84:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+2F3 text6 CODE >86:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+2F6 text6 CODE >87:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+303 text6 CODE >88:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+307 text6 CODE >88:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+30B text6 CODE >89:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+142 text5 CODE >16:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+142 text5 CODE >18:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+145 text5 CODE >19:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+146 text5 CODE >20:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+147 text5 CODE >21:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+148 text5 CODE >22:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+149 text5 CODE >24:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+14C text5 CODE >27:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+150 text5 CODE >29:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+154 text5 CODE >31:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+156 text5 CODE >33:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+157 text5 CODE >35:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+158 text5 CODE >37:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+159 text5 CODE >38:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+30C text4 CODE >40:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+30C text4 CODE >43:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+311 text4 CODE >44:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+31C text4 CODE >46:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+321 text4 CODE >47:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+32C text4 CODE >49:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+331 text4 CODE >50:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+33C text4 CODE >51:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+F5 text3 CODE >6:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+F5 text3 CODE >8:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+F8 text3 CODE >9:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+FB text3 CODE >10:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+104 text2 CODE >6:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+104 text2 CODE >8:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+107 text2 CODE >9:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+108 text2 CODE >11:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+10B text2 CODE >13:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+10D text2 CODE >17:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+291 text1 CODE >64:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+291 text1 CODE >66:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+295 text1 CODE >67:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+296 text1 CODE >68:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+299 text1 CODE >70:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+29E text1 CODE >71:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+2A3 text1 CODE >72:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+2A8 text1 CODE >73:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+2AD text1 CODE >74:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+2B2 text1 CODE >75:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+2B7 text1 CODE >76:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+15A maintext CODE >43:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+15A maintext CODE >45:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+15F maintext CODE >47:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+162 maintext CODE >48:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+162 maintext CODE >52:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+167 maintext CODE >59:C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+FC clrtext CODE >1209:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+FC clrtext CODE >1210:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+FD clrtext CODE >1211:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+FD clrtext CODE >1212:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+FE clrtext CODE >1213:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+FF clrtext CODE >1214:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+100 clrtext CODE >1215:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+101 clrtext CODE >1216:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+102 clrtext CODE >1217:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
+103 clrtext CODE >1218:C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -323,79 +557,118 @@ $dist/default/production\raton877.X.production.o
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 2 0 ABS 0 - dist/default/production\raton877.X.production.o
-__end_of_Ultrasonic_Init AAC 0 CODE 0 text2 dist/default/production\raton877.X.production.o
-__end_of_Ultrasonic_Read E4A 0 CODE 0 text8 dist/default/production\raton877.X.production.o
+__end_of_Ultrasonic_Init 21C 0 CODE 0 text2 dist/default/production\raton877.X.production.o
+__end_of_Ultrasonic_Read 92E 0 CODE 0 text9 dist/default/production\raton877.X.production.o
+___lwmod@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
 __Hspace_0 800 0 ABS 0 - -
-__Hspace_1 7E 0 ABS 0 - -
+__Hspace_1 C0 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 400F 0 ABS 0 - -
-_Motor_Izquierda A7C 0 CODE 0 text14 dist/default/production\raton877.X.production.o
+_Motor_Izquierda 1DC 0 CODE 0 text15 dist/default/production\raton877.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 _T1CONbits 10 0 ABS 0 - dist/default/production\raton877.X.production.o
 __L__absolute__ 0 0 ABS 0 __absolute__ -
 __Hstrings 0 0 ABS 0 strings -
+?_vfprintf 2C 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
 _TMR2 11 0 ABS 0 - dist/default/production\raton877.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-_main CA8 0 CODE 0 maintext dist/default/production\raton877.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+_dbuf A0 0 BANK1 1 bssBANK1 dist/default/production\raton877.X.production.o
+_main 2B4 0 CODE 0 maintext dist/default/production\raton877.X.production.o
+_prec 62 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\raton877.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-___stack_lo 0 0 STACK 2 stack C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
+___stack_hi 0 0 STACK 2 stack C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+___stack_lo 0 0 STACK 2 stack C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
 Servo_Centro@i 72 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
-start 0 0 CODE 0 init C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-__end_of_Sistema_Init B3A 0 CODE 0 text1 dist/default/production\raton877.X.production.o
+start 0 0 CODE 0 init C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+_LCD_Enable 21C 0 CODE 0 text35 dist/default/production\raton877.X.production.o
+_LCD_Data 400 0 CODE 0 text30 dist/default/production\raton877.X.production.o
+_LCD_Init 92E 0 CODE 0 text7 dist/default/production\raton877.X.production.o
+__end_of_Sistema_Init 570 0 CODE 0 text1 dist/default/production\raton877.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
-_Ultrasonic_Init A98 0 CODE 0 text2 dist/default/production\raton877.X.production.o
-_Ultrasonic_Read D8E 0 CODE 0 text8 dist/default/production\raton877.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
+LCD_Write_String@str 76 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+__end_of_LCD_SetCursor 284 0 CODE 0 text31 dist/default/production\raton877.X.production.o
+__end_of_vfpfcnvrt D8A 0 CODE 0 text24 dist/default/production\raton877.X.production.o
+_Ultrasonic_Init 208 0 CODE 0 text2 dist/default/production\raton877.X.production.o
+_Ultrasonic_Read 872 0 CODE 0 text9 dist/default/production\raton877.X.production.o
+__end_of_LCD_Data 446 0 CODE 0 text30 dist/default/production\raton877.X.production.o
+__end_of_LCD_Init 9FA 0 CODE 0 text7 dist/default/production\raton877.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
 wtemp0 7E 0 ABS 0 - dist/default/production\raton877.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
-__end_of_Motor_Atras A6E 0 CODE 0 text16 dist/default/production\raton877.X.production.o
+__end_of_Motor_Atras 1B2 0 CODE 0 text19 dist/default/production\raton877.X.production.o
 Ultrasonic_Read@timeout 7C 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext -
-__end_of_Servo_Derecha BBE 0 CODE 0 text11 dist/default/production\raton877.X.production.o
+_vfpfcnvrt C02 0 CODE 0 text24 dist/default/production\raton877.X.production.o
+__end_of_Servo_Derecha 378 0 CODE 0 text11 dist/default/production\raton877.X.production.o
+_ADCON1 9F 0 ABS 0 - dist/default/production\raton877.X.production.o
+__end_of_Motor_CorregirDerecha 1C0 0 CODE 0 text18 dist/default/production\raton877.X.production.o
 _CCPR1L 15 0 ABS 0 - dist/default/production\raton877.X.production.o
+__end_of_LCD_Enable 23C 0 CODE 0 text35 dist/default/production\raton877.X.production.o
+LCD_SetCursor@col 76 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+LCD_SetCursor@pos 78 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+LCD_SetCursor@row 77 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+_Navigation_Decision D8A 0 CODE 0 text13 dist/default/production\raton877.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-__end_of___lwdiv D8E 0 CODE 0 text9 dist/default/production\raton877.X.production.o
-_Motor_Derecha A6E 0 CODE 0 text15 dist/default/production\raton877.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-___stacklo 0 0 ABS 0 - C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
+_Motor_CorregirDerecha 1B2 0 CODE 0 text18 dist/default/production\raton877.X.production.o
+___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+__end_of___lwdiv 7E4 0 CODE 0 text28 dist/default/production\raton877.X.production.o
+__end_of___lwmod 6EA 0 CODE 0 text27 dist/default/production\raton877.X.production.o
+_Motor_Derecha 1CE 0 CODE 0 text16 dist/default/production\raton877.X.production.o
+_Message 6EA 0 CODE 0 text21 dist/default/production\raton877.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+___stacklo 0 0 ABS 0 - C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+__end_of_LCD_Cmd 400 0 CODE 0 text33 dist/default/production\raton877.X.production.o
 ___lwdiv@quotient 74 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
-__end_of_Navigation_Init ACA 0 CODE 0 text4 dist/default/production\raton877.X.production.o
-start_initialization FE6 0 CODE 0 cinit dist/default/production\raton877.X.production.o
+LCD_Send4Bits@nibble 72 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+__end_of_Navigation_Init 67A 0 CODE 0 text4 dist/default/production\raton877.X.production.o
+__end_of_Navigation_Scan ACE 0 CODE 0 text8 dist/default/production\raton877.X.production.o
+___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+_LCD_Send4Bits 7E4 0 CODE 0 text34 dist/default/production\raton877.X.production.o
+start_initialization FD6 0 CODE 0 cinit dist/default/production\raton877.X.production.o
 _TRISAbits 85 0 ABS 0 - dist/default/production\raton877.X.production.o
 _TRISBbits 86 0 ABS 0 - dist/default/production\raton877.X.production.o
 _TRISCbits 87 0 ABS 0 - dist/default/production\raton877.X.production.o
-_estadoActual 26 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
-__pcstackBANK0 27 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+_TRISEbits 89 0 ABS 0 - dist/default/production\raton877.X.production.o
+LCD_Cmd@cmd 75 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+_tiempoEstado 66 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
+_estadoActual 68 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
+clear_ram0 1F8 0 CODE 0 clrtext dist/default/production\raton877.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
 Servo_Izquierda@i 72 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-_Servo_Init A8A 0 CODE 0 text3 dist/default/production\raton877.X.production.o
+fputc@fp 72 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+__end_of_LCD_Clear 25C 0 CODE 0 text32 dist/default/production\raton877.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+_Servo_Init 1EA 0 CODE 0 text3 dist/default/production\raton877.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
 __Hbank3 0 0 ABS 0 bank3 -
 __Hcinit 1000 0 CODE 0 cinit -
 __Hstack 0 0 STACK 2 stack -
+__stringbase 24 0 STRING 0 strings dist/default/production\raton877.X.production.o
 ___lwdiv@counter 76 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
-_Navigation_Init AAC 0 CODE 0 text4 dist/default/production\raton877.X.production.o
+_Navigation_Init 618 0 CODE 0 text4 dist/default/production\raton877.X.production.o
+_Navigation_Scan 9FA 0 CODE 0 text8 dist/default/production\raton877.X.production.o
 __Hmaintext 0 0 ABS 0 maintext -
 Motor_SetSpeed@duty 70 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+__end_of_sprintf 48C 0 CODE 0 text22 dist/default/production\raton877.X.production.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 4010 0 CONFIG 4 config -
-__end_of_Navigation_Update FE6 0 CODE 0 text7 dist/default/production\raton877.X.production.o
+__end_of_Navigation_Decision FD6 0 CODE 0 text13 dist/default/production\raton877.X.production.o
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
 __Lbank3 0 0 ABS 0 bank3 -
-__Lcinit FE6 0 CODE 0 cinit -
+__Lcinit FD6 0 CODE 0 cinit -
 __Lstack 0 0 STACK 2 stack -
-_Motor_Adelante A52 0 CODE 0 text17 dist/default/production\raton877.X.production.o
+_LCD_Clear 23C 0 CODE 0 text32 dist/default/production\raton877.X.production.o
+_Motor_Adelante 196 0 CODE 0 text20 dist/default/production\raton877.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hheap 0 0 HEAP 7 heap -
@@ -420,6 +693,9 @@ __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 _PR2 92 0 ABS 0 - dist/default/production\raton877.X.production.o
 _RA0 28 0 ABS 0 - dist/default/production\raton877.X.production.o
+_RA1 29 0 ABS 0 - dist/default/production\raton877.X.production.o
+_RA2 2A 0 ABS 0 - dist/default/production\raton877.X.production.o
+_RA3 2B 0 ABS 0 - dist/default/production\raton877.X.production.o
 _RB0 30 0 ABS 0 - dist/default/production\raton877.X.production.o
 _RB1 31 0 ABS 0 - dist/default/production\raton877.X.production.o
 _RB2 32 0 ABS 0 - dist/default/production\raton877.X.production.o
@@ -427,102 +703,168 @@ _RC0 38 0 ABS 0 - dist/default/production\raton877.X.production.o
 _RC1 39 0 ABS 0 - dist/default/production\raton877.X.production.o
 _RC3 3B 0 ABS 0 - dist/default/production\raton877.X.production.o
 _RC4 3C 0 ABS 0 - dist/default/production\raton877.X.production.o
+_RE0 48 0 ABS 0 - dist/default/production\raton877.X.production.o
+_RE1 49 0 ABS 0 - dist/default/production\raton877.X.production.o
+_RE2 4A 0 ABS 0 - dist/default/production\raton877.X.production.o
 __S0 800 0 ABS 0 - -
-__S1 7E 0 ABS 0 - -
+__S1 C0 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_Servo_Centro B3A 0 CODE 0 text12 dist/default/production\raton877.X.production.o
-_Motor_SetSpeed C00 0 CODE 0 text13 dist/default/production\raton877.X.production.o
+_Servo_Centro 2F4 0 CODE 0 text12 dist/default/production\raton877.X.production.o
+_Motor_SetSpeed 570 0 CODE 0 text14 dist/default/production\raton877.X.production.o
 Servo_Derecha@i 72 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
-__end_of_Motor_Derecha A7C 0 CODE 0 text15 dist/default/production\raton877.X.production.o
-__end_of_Servo_Init A98 0 CODE 0 text3 dist/default/production\raton877.X.production.o
+sprintf@fmt 31 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+__end_of_Motor_Derecha 1DC 0 CODE 0 text16 dist/default/production\raton877.X.production.o
+__end_of_Servo_Init 1F8 0 CODE 0 text3 dist/default/production\raton877.X.production.o
+_LCD_Write_String 4D6 0 CODE 0 text29 dist/default/production\raton877.X.production.o
 __Lintentry 0 0 CODE 0 intentry -
-_entorno 20 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
+__stringtab 6 0 STRING 0 strings dist/default/production\raton877.X.production.o
+_entorno 5A 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
 ltemp0a 80 0 ABS 0 - dist/default/production\raton877.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
-__end_of_Motor_Adelante A60 0 CODE 0 text17 dist/default/production\raton877.X.production.o
-__end_of_Servo_Izquierda C00 0 CODE 0 text10 dist/default/production\raton877.X.production.o
-__ptext10 BBE 0 CODE 0 text10 dist/default/production\raton877.X.production.o
-__ptext11 B7C 0 CODE 0 text11 dist/default/production\raton877.X.production.o
-__ptext12 B3A 0 CODE 0 text12 dist/default/production\raton877.X.production.o
-__ptext13 C00 0 CODE 0 text13 dist/default/production\raton877.X.production.o
-__ptext14 A7C 0 CODE 0 text14 dist/default/production\raton877.X.production.o
-__ptext15 A6E 0 CODE 0 text15 dist/default/production\raton877.X.production.o
-__ptext16 A60 0 CODE 0 text16 dist/default/production\raton877.X.production.o
-__ptext17 A52 0 CODE 0 text17 dist/default/production\raton877.X.production.o
-___lwdiv D0A 0 CODE 0 text9 dist/default/production\raton877.X.production.o
-_Navigation_Update E4A 0 CODE 0 text7 dist/default/production\raton877.X.production.o
-__pmaintext CA8 0 CODE 0 maintext dist/default/production\raton877.X.production.o
-__end_of_Motor_SetSpeed C54 0 CODE 0 text13 dist/default/production\raton877.X.production.o
-_Motor_Init ACA 0 CODE 0 text5 dist/default/production\raton877.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__end_of_Motor_Adelante 1A4 0 CODE 0 text20 dist/default/production\raton877.X.production.o
+__end_of_Servo_Izquierda 3BA 0 CODE 0 text10 dist/default/production\raton877.X.production.o
+vfpfcnvrt@fmt 22 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+_estadoNav 67 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
+__end_of_LCD_Send4Bits 872 0 CODE 0 text34 dist/default/production\raton877.X.production.o
+__ptext10 378 0 CODE 0 text10 dist/default/production\raton877.X.production.o
+__ptext11 336 0 CODE 0 text11 dist/default/production\raton877.X.production.o
+__ptext12 2F4 0 CODE 0 text12 dist/default/production\raton877.X.production.o
+__ptext13 D8A 0 CODE 0 text13 dist/default/production\raton877.X.production.o
+__ptext14 570 0 CODE 0 text14 dist/default/production\raton877.X.production.o
+__ptext15 1DC 0 CODE 0 text15 dist/default/production\raton877.X.production.o
+__ptext16 1CE 0 CODE 0 text16 dist/default/production\raton877.X.production.o
+__ptext17 1C0 0 CODE 0 text17 dist/default/production\raton877.X.production.o
+__ptext18 1B2 0 CODE 0 text18 dist/default/production\raton877.X.production.o
+__ptext19 1A4 0 CODE 0 text19 dist/default/production\raton877.X.production.o
+__ptext20 196 0 CODE 0 text20 dist/default/production\raton877.X.production.o
+__ptext21 6EA 0 CODE 0 text21 dist/default/production\raton877.X.production.o
+__ptext22 446 0 CODE 0 text22 dist/default/production\raton877.X.production.o
+__ptext23 48C 0 CODE 0 text23 dist/default/production\raton877.X.production.o
+__ptext24 C02 0 CODE 0 text24 dist/default/production\raton877.X.production.o
+__ptext25 ACE 0 CODE 0 text25 dist/default/production\raton877.X.production.o
+__ptext26 194 0 CODE 0 text26 dist/default/production\raton877.X.production.o
+__ptext27 67A 0 CODE 0 text27 dist/default/production\raton877.X.production.o
+__ptext28 760 0 CODE 0 text28 dist/default/production\raton877.X.production.o
+__ptext29 4D6 0 CODE 0 text29 dist/default/production\raton877.X.production.o
+__ptext30 400 0 CODE 0 text30 dist/default/production\raton877.X.production.o
+__ptext31 25C 0 CODE 0 text31 dist/default/production\raton877.X.production.o
+__ptext32 23C 0 CODE 0 text32 dist/default/production\raton877.X.production.o
+__ptext33 3BA 0 CODE 0 text33 dist/default/production\raton877.X.production.o
+__ptext34 7E4 0 CODE 0 text34 dist/default/production\raton877.X.production.o
+__ptext35 21C 0 CODE 0 text35 dist/default/production\raton877.X.production.o
+___lwdiv 760 0 CODE 0 text28 dist/default/production\raton877.X.production.o
+___lwmod 67A 0 CODE 0 text27 dist/default/production\raton877.X.production.o
+__pmaintext 2B4 0 CODE 0 maintext dist/default/production\raton877.X.production.o
+__end_of_Motor_SetSpeed 5C4 0 CODE 0 text14 dist/default/production\raton877.X.production.o
+_Motor_Init 284 0 CODE 0 text5 dist/default/production\raton877.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
+Message@mensaje 41 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+_LCD_Cmd 3BA 0 CODE 0 text33 dist/default/production\raton877.X.production.o
+_Motor_CorregirIzquierda 1C0 0 CODE 0 text17 dist/default/production\raton877.X.production.o
 ___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
-__end_of_Servo_Centro B7C 0 CODE 0 text12 dist/default/production\raton877.X.production.o
-_Servo_Izquierda BBE 0 CODE 0 text10 dist/default/production\raton877.X.production.o
+__end_of_Motor_CorregirIzquierda 1CE 0 CODE 0 text17 dist/default/production\raton877.X.production.o
+__end_of_Servo_Centro 336 0 CODE 0 text12 dist/default/production\raton877.X.production.o
+__end_of__stringtab 26 0 STRING 0 strings dist/default/production\raton877.X.production.o
+_Servo_Izquierda 378 0 CODE 0 text10 dist/default/production\raton877.X.production.o
 Ultrasonic_Read@tiempo 7A 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-_LED_Boot C54 0 CODE 0 text6 dist/default/production\raton877.X.production.o
+_LED_Boot 5C4 0 CODE 0 text6 dist/default/production\raton877.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 _PIR1bits C 0 ABS 0 - dist/default/production\raton877.X.production.o
 __Lend_init 0 0 CODE 0 end_init -
+__end_of_LCD_Write_String 522 0 CODE 0 text29 dist/default/production\raton877.X.production.o
+vfpfcnvrt@convarg 26 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization FF8 0 CODE 0 cinit dist/default/production\raton877.X.production.o
-__end_of_LED_Boot CA8 0 CODE 0 text6 dist/default/production\raton877.X.production.o
+__end_of_LED_Boot 618 0 CODE 0 text6 dist/default/production\raton877.X.production.o
 __Hintentry 0 0 CODE 0 intentry -
+fputc@c 70 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
 __Lstrings 0 0 ABS 0 strings -
 ___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
 ?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+?___lwmod 70 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+vfprintf@fmt 2E 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
 LED_Boot@i 73 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
-__end_of_Motor_Init AFA 0 CODE 0 text5 dist/default/production\raton877.X.production.o
-_Motor_Atras A60 0 CODE 0 text16 dist/default/production\raton877.X.production.o
-__ptext1 AFA 0 CODE 0 text1 dist/default/production\raton877.X.production.o
-__ptext2 A98 0 CODE 0 text2 dist/default/production\raton877.X.production.o
-__ptext3 A8A 0 CODE 0 text3 dist/default/production\raton877.X.production.o
-__ptext4 AAC 0 CODE 0 text4 dist/default/production\raton877.X.production.o
-__ptext5 ACA 0 CODE 0 text5 dist/default/production\raton877.X.production.o
-__ptext6 C54 0 CODE 0 text6 dist/default/production\raton877.X.production.o
-__ptext7 E4A 0 CODE 0 text7 dist/default/production\raton877.X.production.o
-__ptext8 D8E 0 CODE 0 text8 dist/default/production\raton877.X.production.o
-__ptext9 D0A 0 CODE 0 text9 dist/default/production\raton877.X.production.o
+__end_of_Motor_Init 2B4 0 CODE 0 text5 dist/default/production\raton877.X.production.o
+_Motor_Atras 1A4 0 CODE 0 text19 dist/default/production\raton877.X.production.o
+vfpfcnvrt@ap 23 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+vfpfcnvrt@cp 2A 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+vfpfcnvrt@fp 20 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+__ptext1 522 0 CODE 0 text1 dist/default/production\raton877.X.production.o
+__ptext2 208 0 CODE 0 text2 dist/default/production\raton877.X.production.o
+__ptext3 1EA 0 CODE 0 text3 dist/default/production\raton877.X.production.o
+__ptext4 618 0 CODE 0 text4 dist/default/production\raton877.X.production.o
+__ptext5 284 0 CODE 0 text5 dist/default/production\raton877.X.production.o
+__ptext6 5C4 0 CODE 0 text6 dist/default/production\raton877.X.production.o
+__ptext7 92E 0 CODE 0 text7 dist/default/production\raton877.X.production.o
+__ptext8 9FA 0 CODE 0 text8 dist/default/production\raton877.X.production.o
+__ptext9 872 0 CODE 0 text9 dist/default/production\raton877.X.production.o
+vfprintf@ap 2F 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+vfprintf@fp 2C 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+vfprintf@cfmt 7D 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+_sprintf 446 0 CODE 0 text22 dist/default/production\raton877.X.production.o
+_vfprintf 48C 0 CODE 0 text23 dist/default/production\raton877.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap 35 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
 __H__absolute__ 0 0 ABS 0 __absolute__ -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-___heap_hi 0 0 ABS 0 - C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-___heap_lo 0 0 ABS 0 - C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
+__end_of_vfprintf 4D6 0 CODE 0 text23 dist/default/production\raton877.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+___heap_lo 0 0 ABS 0 - C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+_LCD_SetCursor 25C 0 CODE 0 text31 dist/default/production\raton877.X.production.o
 __end_of__initialization FF8 0 CODE 0 cinit dist/default/production\raton877.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 0 0 ABS 0 clrtext -
+Message@buffer 44 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+Message@distancia 42 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
 wtemp0a 7F 0 ABS 0 - dist/default/production\raton877.X.production.o
 __Hend_init 6 0 CODE 0 end_init -
-__end_of_main D0A 0 CODE 0 maintext dist/default/production\raton877.X.production.o
-_Servo_Derecha B7C 0 CODE 0 text11 dist/default/production\raton877.X.production.o
-__end_of_Motor_Izquierda A8A 0 CODE 0 text14 dist/default/production\raton877.X.production.o
+__end_of_Message 760 0 CODE 0 text21 dist/default/production\raton877.X.production.o
+vfpfcnvrt@c 2B 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+sprintf@f 36 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+sprintf@s 30 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
+__end_of_main 2F4 0 CODE 0 maintext dist/default/production\raton877.X.production.o
+_Servo_Derecha 336 0 CODE 0 text11 dist/default/production\raton877.X.production.o
+__end_of_Motor_Izquierda 1EA 0 CODE 0 text15 dist/default/production\raton877.X.production.o
+__end_of_fputc C02 0 CODE 0 text25 dist/default/production\raton877.X.production.o
+?_sprintf 30 0 BANK0 1 cstackBANK0 dist/default/production\raton877.X.production.o
 _PORTC 7 0 ABS 0 - dist/default/production\raton877.X.production.o
 _T1CON 10 0 ABS 0 - dist/default/production\raton877.X.production.o
 _T2CON 12 0 ABS 0 - dist/default/production\raton877.X.production.o
 _TMR1H F 0 ABS 0 - dist/default/production\raton877.X.production.o
 _TMR1L E 0 ABS 0 - dist/default/production\raton877.X.production.o
+__end_of_putch 196 0 CODE 0 text26 dist/default/production\raton877.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
+_flags 64 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
+_fputc ACE 0 CODE 0 text25 dist/default/production\raton877.X.production.o
+_putch 194 0 CODE 0 text26 dist/default/production\raton877.X.production.o
+_width 60 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
 _CCP1CON 17 0 ABS 0 - dist/default/production\raton877.X.production.o
-_Sistema_Init AFA 0 CODE 0 text1 dist/default/production\raton877.X.production.o
-__initialization FE6 0 CODE 0 cinit dist/default/production\raton877.X.production.o
+_Sistema_Init 522 0 CODE 0 text1 dist/default/production\raton877.X.production.o
+__initialization FD6 0 CODE 0 cinit dist/default/production\raton877.X.production.o
 btemp0 7E 0 ABS 0 - dist/default/production\raton877.X.production.o
 btemp1 7F 0 ABS 0 - dist/default/production\raton877.X.production.o
-__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
+__pbssBANK0 5A 0 BANK0 1 bssBANK0 dist/default/production\raton877.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\raton877.X.production.o
+LCD_Data@data 75 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
+__pstrings 6 0 STRING 0 strings dist/default/production\raton877.X.production.o
 ttemp0a 7F 0 ABS 0 - dist/default/production\raton877.X.production.o
 ?_Ultrasonic_Read 77 0 COMMON 1 cstackCOMMON dist/default/production\raton877.X.production.o
-___int_stack_hi 0 0 STACK 2 stack C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
-___int_stack_lo 0 0 STACK 2 stack C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\driver_tmp_12.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\Slimx1\AppData\Local\Temp\xcAsl94.0\driver_tmp_17.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -548,28 +890,49 @@ ___int_stack_lo 0 0 STACK 2 stack C:\Users\locon\AppData\Local\Temp\xcAsmhg.0\dr
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cinit 0 7F3 FE6 D 2
-text1 0 57D AFA 20 2
-text2 0 54C A98 A 2
-text3 0 545 A8A 7 2
-text4 0 556 AAC F 2
-text5 0 565 ACA 18 2
-text6 0 62A C54 2A 2
-text7 0 725 E4A CE 2
-text8 0 6C7 D8E 5E 2
-text9 0 685 D0A 42 2
-text10 0 5DF BBE 21 2
-text11 0 5BE B7C 21 2
-text12 0 59D B3A 21 2
-text13 0 600 C00 2A 2
-text14 0 53E A7C 7 2
-text15 0 537 A6E 7 2
-text16 0 530 A60 7 2
-text17 0 529 A52 7 2
-maintext 0 654 CA8 31 2
+cinit 0 7EB FD6 15 2
+text1 0 291 522 27 2
+text2 0 104 208 A 2
+text3 0 F5 1EA 7 2
+text4 0 30C 618 31 2
+text5 0 142 284 18 2
+text6 0 2E2 5C4 2A 2
+text7 0 497 92E 66 2
+text8 0 4FD 9FA 6A 2
+text9 0 439 872 5E 2
+text10 0 1BC 378 21 2
+text11 0 19B 336 21 2
+text12 0 17A 2F4 21 2
+text13 0 6C5 D8A 126 2
+text14 0 2B8 570 2A 2
+text15 0 EE 1DC 7 2
+text16 0 E7 1CE 7 2
+text17 0 E0 1C0 7 2
+text18 0 D9 1B2 7 2
+text19 0 D2 1A4 7 2
+text20 0 CB 196 7 2
+text21 0 375 6EA 3B 2
+text22 0 223 446 23 2
+text23 0 246 48C 25 2
+text24 0 601 C02 C4 2
+text25 0 567 ACE 9A 2
+text26 0 CA 194 1 2
+text27 0 33D 67A 38 2
+text28 0 3B0 760 42 2
+text29 0 26B 4D6 26 2
+text30 0 200 400 23 2
+text31 0 12E 25C 14 2
+text32 0 11E 23C 10 2
+text33 0 1DD 3BA 23 2
+text34 0 3F2 7E4 47 2
+text35 0 10E 21C 10 2
+maintext 0 15A 2B4 20 2
 cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 49 1
 reset_vec 0 0 0 3 2
-bssBANK0 1 20 20 A 1
+bssBANK1 1 A0 A0 20 1
+strings 0 3 6 48 2
+clrtext 0 FC 1F8 8 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

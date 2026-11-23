@@ -3,4 +3,5 @@ newmain.c  \
 motor.h  \
 ultrasonic.h  \
 servo.h  \
-navigation.h 
+navigation.h  \
+lcd.h 

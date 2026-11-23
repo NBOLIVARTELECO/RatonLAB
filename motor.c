@@ -48,10 +48,10 @@ void Motor_SetSpeed(unsigned int duty)
 }
 void Motor_Adelante(void)
 {
-    RC0 = 1;
+    RC0 = 1;//motor der
     RC1 = 0;
 
-    RC3 = 0;
+    RC3 = 0;//motor izqu
     RC4 = 1;
 }
 void Motor_Atras(void)
@@ -67,14 +67,34 @@ void Motor_Izquierda(void)
     RC0 = 1;
     RC1 = 0;
 
-    RC3 = 0;
+    RC3 = 1;
     RC4 = 0;
 }
 void Motor_Derecha(void)
 {
     RC0 = 0;
+    RC1 = 1;
+
+    RC3 = 0;
+    RC4 = 1;
+}
+void Motor_CorregirDerecha(void)
+{
+    // Motor derecho adelante
+    RC0 = 1;
     RC1 = 0;
 
+    // Motor izquierdo detenido
+    RC3 = 0;
+    RC4 = 0;
+}
+void Motor_CorregirIzquierda(void)
+{
+    // Motor derecho detenido
+    RC0 = 0;
+    RC1 = 0;
+
+    // Motor derizquierdoecho adelante
     RC3 = 0;
     RC4 = 1;
 }

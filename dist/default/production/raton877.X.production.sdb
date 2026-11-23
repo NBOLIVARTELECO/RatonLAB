@@ -3,16 +3,37 @@
 [d edition pro ]
 [d chip 16LF877A ]
 [d frameptr 0 ]
-"38 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-[e E1033 . `uc
+"39 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+[e E1049 . `uc
 ESTADO_STOP 0
 ESTADO_ADELANTE 1
 ESTADO_ATRAS 2
 ESTADO_IZQUIERDA 3
 ESTADO_DERECHA 4
 ]
+"31 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+[e E1365 . `uc
+NAV_ADELANTE 0
+NAV_GIRO_IZQ 1
+NAV_GIRO_DER 2
+NAV_REVERSA 3
+]
+"1177 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
 "5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
 "10 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul8_16.c
@@ -21,7 +42,23 @@ ESTADO_DERECHA 4
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"16 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+"14 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+[v _LCD_Enable LCD_Enable `(v  1 s 1 LCD_Enable ]
+"23
+[v _LCD_Send4Bits LCD_Send4Bits `(v  1 s 1 LCD_Send4Bits ]
+"33
+[v _LCD_Cmd LCD_Cmd `(v  1 e 1 0 ]
+"43
+[v _LCD_Data LCD_Data `(v  1 e 1 0 ]
+"53
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+"59
+[v _LCD_SetCursor LCD_SetCursor `(v  1 e 1 0 ]
+"76
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+"84
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"16 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
 [v _Motor_Init Motor_Init `(v  1 e 1 0 ]
 "39
 [v _Motor_SetSpeed Motor_SetSpeed `(v  1 e 1 0 ]
@@ -34,18 +71,24 @@ ESTADO_DERECHA 4
 "73
 [v _Motor_Derecha Motor_Derecha `(v  1 e 1 0 ]
 "81
-[v _Motor_Stop Motor_Stop `(v  1 e 1 0 ]
-"11 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+[v _Motor_CorregirDerecha Motor_CorregirDerecha `(v  1 e 1 0 ]
+"91
+[v _Motor_CorregirIzquierda Motor_CorregirIzquierda `(v  1 e 1 0 ]
+"40 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
 [v _Navigation_Init Navigation_Init `(v  1 e 1 0 ]
-"17
-[v _Navigation_Update Navigation_Update `(v  1 e 1 0 ]
-"42 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+"53
+[v _Navigation_Scan Navigation_Scan `(v  1 e 1 0 ]
+"77
+[v _Navigation_Decision Navigation_Decision `(v  1 e 1 0 ]
+"186
+[v _Message Message `(v  1 e 1 0 ]
+"43 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
 [v _main main `(v  1 e 1 0 ]
-"65
+"64
 [v _Sistema_Init Sistema_Init `(v  1 e 1 0 ]
-"76
+"77
 [v _LED_Boot LED_Boot `(v  1 e 1 0 ]
-"6 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+"6 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
 [v _Servo_Init Servo_Init `(v  1 e 1 0 ]
 "12
 [v _Servo_Izquierda Servo_Izquierda `(v  1 e 1 0 ]
@@ -53,13 +96,13 @@ ESTADO_DERECHA 4
 [v _Servo_Centro Servo_Centro `(v  1 e 1 0 ]
 "40
 [v _Servo_Derecha Servo_Derecha `(v  1 e 1 0 ]
-"6 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+"6 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
 [v _Ultrasonic_Init Ultrasonic_Init `(v  1 e 1 0 ]
 "19
 [v _Ultrasonic_Read Ultrasonic_Read `(ui  1 e 2 0 ]
 "262 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h
 [v _PORTC PORTC `VEuc  1 e 1 @7 ]
-[s S162 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S128 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -69,32 +112,32 @@ ESTADO_DERECHA 4
 `uc 1 PSPIF 1 0 :1:7 
 ]
 "533
-[u S171 . 1 `S162 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES171  1 e 1 @12 ]
+[u S137 . 1 `S128 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES137  1 e 1 @12 ]
 "625
 [v _TMR1L TMR1L `VEuc  1 e 1 @14 ]
 "632
 [v _TMR1H TMR1H `VEuc  1 e 1 @15 ]
 "639
 [v _T1CON T1CON `VEuc  1 e 1 @16 ]
-[s S239 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S207 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 TMR1CS 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 T1OSCEN 1 0 :1:3 
 `uc 1 T1CKPS 1 0 :2:4 
 ]
 "664
-[s S245 . 1 `uc 1 . 1 0 :2:0 
+[s S213 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T1SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 ]
-[s S251 . 1 `uc 1 . 1 0 :2:0 
+[s S219 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T1INSYNC 1 0 :1:2 
 ]
-[u S254 . 1 `S239 1 . 1 0 `S245 1 . 1 0 `S251 1 . 1 0 ]
-[v _T1CONbits T1CONbits `VES254  1 e 1 @16 ]
+[u S222 . 1 `S207 1 . 1 0 `S213 1 . 1 0 `S219 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES222  1 e 1 @16 ]
 "714
 [v _TMR2 TMR2 `VEuc  1 e 1 @17 ]
 "721
@@ -103,7 +146,7 @@ ESTADO_DERECHA 4
 [v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
 "890
 [v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
-[s S45 . 1 `uc 1 TRISA0 1 0 :1:0 
+[s S43 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
@@ -111,9 +154,9 @@ ESTADO_DERECHA 4
 `uc 1 TRISA5 1 0 :1:5 
 ]
 "1324
-[u S52 . 1 `S45 1 . 1 0 ]
-[v _TRISAbits TRISAbits `VES52  1 e 1 @133 ]
-[s S211 . 1 `uc 1 TRISB0 1 0 :1:0 
+[u S50 . 1 `S43 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES50  1 e 1 @133 ]
+[s S179 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
 `uc 1 TRISB3 1 0 :1:3 
@@ -123,9 +166,9 @@ ESTADO_DERECHA 4
 `uc 1 TRISB7 1 0 :1:7 
 ]
 "1376
-[u S220 . 1 `S211 1 . 1 0 ]
-[v _TRISBbits TRISBbits `VES220  1 e 1 @134 ]
-[s S135 . 1 `uc 1 TRISC0 1 0 :1:0 
+[u S188 . 1 `S179 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES188  1 e 1 @134 ]
+[s S101 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -135,12 +178,32 @@ ESTADO_DERECHA 4
 `uc 1 TRISC7 1 0 :1:7 
 ]
 "1438
-[u S144 . 1 `S135 1 . 1 0 ]
-[v _TRISCbits TRISCbits `VES144  1 e 1 @135 ]
+[u S110 . 1 `S101 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES110  1 e 1 @135 ]
+[s S385 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"1562
+[u S394 . 1 `S385 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES394  1 e 1 @137 ]
 "1800
 [v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2213
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
 "2644
 [v _RA0 RA0 `VEb  1 e 0 @40 ]
+"2647
+[v _RA1 RA1 `VEb  1 e 0 @41 ]
+"2650
+[v _RA2 RA2 `VEb  1 e 0 @42 ]
+"2653
+[v _RA3 RA3 `VEb  1 e 0 @43 ]
 "2662
 [v _RB0 RB0 `VEb  1 e 0 @48 ]
 "2665
@@ -155,54 +218,76 @@ ESTADO_DERECHA 4
 [v _RC3 RC3 `VEb  1 e 0 @59 ]
 "2704
 [v _RC4 RC4 `VEb  1 e 0 @60 ]
-[s S36 . 6 `ui 1 izquierda 2 0 `ui 1 centro 2 2 `ui 1 derecha 2 4 ]
-"9 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-[v _entorno entorno `S36  1 e 6 0 ]
-"38 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
-[v _estadoActual estadoActual `E1033  1 e 1 0 ]
-"42
+"2761
+[v _RE0 RE0 `VEb  1 e 0 @72 ]
+"2764
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"2767
+[v _RE2 RE2 `VEb  1 e 0 @74 ]
+"153 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
+"185
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"33 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+[v _estadoNav estadoNav `E1365  1 e 1 0 ]
+"35
+[v _tiempoEstado tiempoEstado `uc  1 e 1 0 ]
+[s S286 . 6 `ui 1 izquierda 2 0 `ui 1 centro 2 2 `ui 1 derecha 2 4 ]
+"36
+[v _entorno entorno `S286  1 e 6 0 ]
+"39 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+[v _estadoActual estadoActual `E1049  1 e 1 0 ]
+"43
 [v _main main `(v  1 e 1 0 ]
 {
-"63
+"62
 } 0
-"65
+"64
 [v _Sistema_Init Sistema_Init `(v  1 e 1 0 ]
 {
-"75
+"76
 } 0
-"6 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+"6 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
 [v _Ultrasonic_Init Ultrasonic_Init `(v  1 e 1 0 ]
 {
 "17
 } 0
-"6 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+"6 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
 [v _Servo_Init Servo_Init `(v  1 e 1 0 ]
 {
 "10
 } 0
-"11 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+"40 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
 [v _Navigation_Init Navigation_Init `(v  1 e 1 0 ]
 {
-"16
+"51
 } 0
-"16 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+"16 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
 [v _Motor_Init Motor_Init `(v  1 e 1 0 ]
 {
 "38
 } 0
-"76 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
+"77 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\newmain.c
 [v _LED_Boot LED_Boot `(v  1 e 1 0 ]
 {
-"78
+"79
 [v LED_Boot@i i `uc  1 a 1 3 ]
-"88
+"89
 } 0
-"17 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
-[v _Navigation_Update Navigation_Update `(v  1 e 1 0 ]
+"84 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
 {
-"74
+"116
 } 0
-"19 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
+"53 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+[v _Navigation_Scan Navigation_Scan `(v  1 e 1 0 ]
+{
+"75
+} 0
+"19 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\ultrasonic.c
 [v _Ultrasonic_Read Ultrasonic_Read `(ui  1 e 2 0 ]
 {
 "22
@@ -211,19 +296,7 @@ ESTADO_DERECHA 4
 [v Ultrasonic_Read@tiempo tiempo `ui  1 a 2 10 ]
 "51
 } 0
-"5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-{
-"10
-[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
-"11
-[v ___lwdiv@counter counter `uc  1 a 1 6 ]
-"5
-[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
-[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
-"30
-} 0
-"12 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
+"12 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\servo.c
 [v _Servo_Izquierda Servo_Izquierda `(v  1 e 1 0 ]
 {
 "14
@@ -244,7 +317,12 @@ ESTADO_DERECHA 4
 [v Servo_Centro@i i `uc  1 a 1 2 ]
 "38
 } 0
-"39 C:\Users\locon\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
+"77 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+[v _Navigation_Decision Navigation_Decision `(v  1 e 1 0 ]
+{
+"184
+} 0
+"39 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\motor.c
 [v _Motor_SetSpeed Motor_SetSpeed `(v  1 e 1 0 ]
 {
 [v Motor_SetSpeed@duty duty `ui  1 p 2 0 ]
@@ -260,6 +338,16 @@ ESTADO_DERECHA 4
 {
 "80
 } 0
+"91
+[v _Motor_CorregirIzquierda Motor_CorregirIzquierda `(v  1 e 1 0 ]
+{
+"100
+} 0
+"81
+[v _Motor_CorregirDerecha Motor_CorregirDerecha `(v  1 e 1 0 ]
+{
+"90
+} 0
 "57
 [v _Motor_Atras Motor_Atras `(v  1 e 1 0 ]
 {
@@ -269,4 +357,148 @@ ESTADO_DERECHA 4
 [v _Motor_Adelante Motor_Adelante `(v  1 e 1 0 ]
 {
 "56
+} 0
+"186 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\navigation.c
+[v _Message Message `(v  1 e 1 0 ]
+{
+"188
+[v Message@buffer buffer `[16]uc  1 a 16 36 ]
+"186
+[v Message@mensaje mensaje `*.24uc  1 p 1 33 ]
+[v Message@distancia distancia `ui  1 p 2 34 ]
+"199
+} 0
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S876 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+"13
+[s S879 _IO_FILE 11 `S876 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S879  1 a 11 22 ]
+"12
+[v sprintf@ap ap `[1]*.4v  1 a 1 21 ]
+"9
+[v sprintf@s s `*.4uc  1 p 1 16 ]
+[v sprintf@fmt fmt `*.24DCuc  1 p 1 17 ]
+"23
+} 0
+"1817 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.24uc  1 a 1 13 ]
+[s S911 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.39S911  1 p 2 12 ]
+[v vfprintf@fmt fmt `*.24DCuc  1 p 1 14 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 15 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S924 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S924  1 a 4 6 ]
+"1179
+[v vfpfcnvrt@c c `uc  1 a 1 11 ]
+[v vfpfcnvrt@cp cp `*.24uc  1 a 1 10 ]
+[s S911 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.39S911  1 p 2 0 ]
+[v vfpfcnvrt@fmt fmt `*.30*.24uc  1 p 1 2 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 3 ]
+"1814
+} 0
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S876 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+[s S879 _IO_FILE 11 `S876 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S879  1 p 2 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 1
+"5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"76 C:\Users\Slimx1\OneDrive - UNIVERSIDAD DE CUNDINAMARCA\DIGITALES 2\MPLAB\raton877\raton877.X\lcd.c
+[v _LCD_Write_String LCD_Write_String `(v  1 e 1 0 ]
+{
+[v LCD_Write_String@str str `*.26DCuc  1 p 2 6 ]
+"82
+} 0
+"43
+[v _LCD_Data LCD_Data `(v  1 e 1 0 ]
+{
+[v LCD_Data@data data `uc  1 p 1 wreg ]
+[v LCD_Data@data data `uc  1 p 1 wreg ]
+"45
+[v LCD_Data@data data `uc  1 p 1 5 ]
+"51
+} 1
+"59
+[v _LCD_SetCursor LCD_SetCursor `(v  1 e 1 0 ]
+{
+[v LCD_SetCursor@row row `uc  1 p 1 wreg ]
+"61
+[v LCD_SetCursor@pos pos `uc  1 a 1 8 ]
+"59
+[v LCD_SetCursor@row row `uc  1 p 1 wreg ]
+[v LCD_SetCursor@col col `uc  1 p 1 6 ]
+"63
+[v LCD_SetCursor@row row `uc  1 p 1 7 ]
+"69
+} 1
+"53
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+{
+"57
+} 0
+"33
+[v _LCD_Cmd LCD_Cmd `(v  1 e 1 0 ]
+{
+[v LCD_Cmd@cmd cmd `uc  1 p 1 wreg ]
+[v LCD_Cmd@cmd cmd `uc  1 p 1 wreg ]
+"35
+[v LCD_Cmd@cmd cmd `uc  1 p 1 5 ]
+"41
+} 1
+"23
+[v _LCD_Send4Bits LCD_Send4Bits `(v  1 s 1 LCD_Send4Bits ]
+{
+[v LCD_Send4Bits@nibble nibble `uc  1 p 1 wreg ]
+[v LCD_Send4Bits@nibble nibble `uc  1 p 1 wreg ]
+"25
+[v LCD_Send4Bits@nibble nibble `uc  1 p 1 2 ]
+"31
+} 1
+"14
+[v _LCD_Enable LCD_Enable `(v  1 s 1 LCD_Enable ]
+{
+"21
 } 0

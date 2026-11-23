@@ -1893,6 +1893,8 @@ void Motor_Izquierda(void);
 void Motor_Derecha(void);
 
 void Motor_Stop(void);
+void Motor_CorregirIzquierda(void);
+void Motor_CorregirDerecha(void);
 # 3 "motor.c" 2
 # 16 "motor.c"
 void Motor_Init(void)
@@ -1949,13 +1951,33 @@ void Motor_Izquierda(void)
     RC0 = 1;
     RC1 = 0;
 
-    RC3 = 0;
+    RC3 = 1;
     RC4 = 0;
 }
 void Motor_Derecha(void)
 {
     RC0 = 0;
+    RC1 = 1;
+
+    RC3 = 0;
+    RC4 = 1;
+}
+void Motor_CorregirDerecha(void)
+{
+
+    RC0 = 1;
     RC1 = 0;
+
+
+    RC3 = 0;
+    RC4 = 0;
+}
+void Motor_CorregirIzquierda(void)
+{
+
+    RC0 = 0;
+    RC1 = 0;
+
 
     RC3 = 0;
     RC4 = 1;

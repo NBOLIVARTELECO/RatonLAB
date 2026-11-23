@@ -1,4 +1,8 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"31 navigation.c
+[; ;navigation.c: 31: NavState estadoNav;
+[c E1365 0 1 2 3 .. ]
+[n E1365 . NAV_ADELANTE NAV_GIRO_IZQ NAV_GIRO_DER NAV_REVERSA  ]
 "5 ./navigation.h
 [; ;./navigation.h: 5: {
 [s S1 `ui 1 `ui 1 `ui 1 ]
@@ -15,25 +19,49 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8
 [; ;./servo.h: 8: void Servo_Derecha(void);
 [v _Servo_Derecha `(v ~T0 @X0 0 ef ]
+[v F202 `(v ~T0 @X0 1 tf1`ul ]
+"20 C:\Program Files\Microchip\xc8\v3.10\pic\include/builtins.h
+[v __delay `JF202 ~T0 @X0 0 e ]
+[p i __delay ]
+"18 ./navigation.h
+[; ;./navigation.h: 18: void Navigation_Decision(void);
+[v _Navigation_Decision `(v ~T0 @X0 0 ef ]
 "6 ./motor.h
 [; ;./motor.h: 6: void Motor_SetSpeed(unsigned int duty);
 [v _Motor_SetSpeed `(v ~T0 @X0 0 ef1`ui ]
-"9
-[; ;./motor.h: 9: void Motor_Atras(void);
-[v _Motor_Atras `(v ~T0 @X0 0 ef ]
-[v F186 `(v ~T0 @X0 1 tf1`ul ]
-"20 C:\Program Files\Microchip\xc8\v3.10\pic\include/builtins.h
-[v __delay `JF186 ~T0 @X0 0 e ]
-[p i __delay ]
-"12 ./motor.h
-[; ;./motor.h: 12: void Motor_Derecha(void);
-[v _Motor_Derecha `(v ~T0 @X0 0 ef ]
 "11
 [; ;./motor.h: 11: void Motor_Izquierda(void);
 [v _Motor_Izquierda `(v ~T0 @X0 0 ef ]
+"38 navigation.c
+[; ;navigation.c: 38: void Message(char *mensaje, unsigned int distancia);
+[v _Message `(v ~T0 @X0 0 ef2`*uc`ui ]
+"12 ./motor.h
+[; ;./motor.h: 12: void Motor_Derecha(void);
+[v _Motor_Derecha `(v ~T0 @X0 0 ef ]
+"9
+[; ;./motor.h: 9: void Motor_Atras(void);
+[v _Motor_Atras `(v ~T0 @X0 0 ef ]
+"16
+[; ;./motor.h: 16: void Motor_CorregirDerecha(void);
+[v _Motor_CorregirDerecha `(v ~T0 @X0 0 ef ]
+"15
+[; ;./motor.h: 15: void Motor_CorregirIzquierda(void);
+[v _Motor_CorregirIzquierda `(v ~T0 @X0 0 ef ]
 "8
 [; ;./motor.h: 8: void Motor_Adelante(void);
 [v _Motor_Adelante `(v ~T0 @X0 0 ef ]
+"5 ./lcd.h
+[; ;./lcd.h: 5: void LCD_Clear(void);
+[v _LCD_Clear `(v ~T0 @X0 0 ef ]
+"10
+[; ;./lcd.h: 10: void LCD_SetCursor(unsigned char row, unsigned char col);
+[v _LCD_SetCursor `(v ~T0 @X0 0 ef2`uc`uc ]
+"13
+[; ;./lcd.h: 13: void LCD_Write_String(const char *str);
+[v _LCD_Write_String `(v ~T0 @X0 0 ef1`*Cuc ]
+"121 C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/stdio.h
+[; ;C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/stdio.h: 121: int sprintf(char *restrict, const char *restrict, ...);
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
 "38 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 38: __asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
@@ -214,174 +242,374 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2347
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16lf877a.h: 2347: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
-"9 navigation.c
-[; ;navigation.c: 9: Distancias entorno;
+"31 navigation.c
+[; ;navigation.c: 31: NavState estadoNav;
+[v _estadoNav `E1365 ~T0 @X0 1 e ]
+"33
+[; ;navigation.c: 33: NavState estadoNav = NAV_ADELANTE;
+[v _estadoNav `E1365 ~T0 @X0 1 e ]
+[i _estadoNav
+. `E1365 0
+]
+"35
+[; ;navigation.c: 35: unsigned char tiempoEstado = 0;
+[v _tiempoEstado `uc ~T0 @X0 1 e ]
+[i _tiempoEstado
+-> -> 0 `i `uc
+]
+"36
+[; ;navigation.c: 36: Distancias entorno;
 [v _entorno `S1 ~T0 @X0 1 e ]
-"11
-[; ;navigation.c: 11: void Navigation_Init(void)
+"37
+[; ;navigation.c: 37: unsigned char ciclos;
+[v _ciclos `uc ~T0 @X0 1 e ]
+"40
+[; ;navigation.c: 40: void Navigation_Init(void)
 [v _Navigation_Init `(v ~T0 @X0 1 ef ]
-"12
-[; ;navigation.c: 12: {
+"41
+[; ;navigation.c: 41: {
 {
 [e :U _Navigation_Init ]
 [f ]
-"13
-[; ;navigation.c: 13:     entorno.izquierda = 15;
-[e = . _entorno 0 -> -> 15 `i `ui ]
-"14
-[; ;navigation.c: 14:     entorno.centro = 15;
-[e = . _entorno 1 -> -> 15 `i `ui ]
-"15
-[; ;navigation.c: 15:     entorno.derecha = 15;
-[e = . _entorno 2 -> -> 15 `i `ui ]
-"16
-[; ;navigation.c: 16: }
-[e :UE 100 ]
-}
-"17
-[; ;navigation.c: 17: void Navigation_Update(void)
-[v _Navigation_Update `(v ~T0 @X0 1 ef ]
-"18
-[; ;navigation.c: 18: {
-{
-[e :U _Navigation_Update ]
-[f ]
-"19
-[; ;navigation.c: 19:     Servo_Centro();
-[e ( _Servo_Centro ..  ]
-"20
-[; ;navigation.c: 20:     entorno.centro = Ultrasonic_Read();
-[e = . _entorno 1 ( _Ultrasonic_Read ..  ]
-"22
-[; ;navigation.c: 22:     Servo_Izquierda();
-[e ( _Servo_Izquierda ..  ]
-"23
-[; ;navigation.c: 23:     entorno.izquierda = Ultrasonic_Read();
-[e = . _entorno 0 ( _Ultrasonic_Read ..  ]
-"25
-[; ;navigation.c: 25:     Servo_Derecha();
-[e ( _Servo_Derecha ..  ]
-"26
-[; ;navigation.c: 26:     entorno.derecha = Ultrasonic_Read();
-[e = . _entorno 2 ( _Ultrasonic_Read ..  ]
-"29
-[; ;navigation.c: 29:     if((entorno.centro < 15) &&
-[e $ ! && && < . _entorno 1 -> -> 15 `i `ui < . _entorno 0 -> -> 15 `i `ui < . _entorno 2 -> -> 15 `i `ui 102  ]
-"32
-[; ;navigation.c: 32:     {
-{
-"33
-[; ;navigation.c: 33:         Motor_SetSpeed(400);
-[e ( _Motor_SetSpeed (1 -> -> 400 `i `ui ]
-"34
-[; ;navigation.c: 34:         Motor_Atras();
-[e ( _Motor_Atras ..  ]
-"36
-[; ;navigation.c: 36:         _delay((unsigned long)((300)*(20000000/4000.0)));
-[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-"38
-[; ;navigation.c: 38:         return;
-[e $UE 101  ]
-"39
-[; ;navigation.c: 39:     }
-}
-[e :U 102 ]
-"42
-[; ;navigation.c: 42:     if(entorno.centro < 15)
-[e $ ! < . _entorno 1 -> -> 15 `i `ui 103  ]
 "43
-[; ;navigation.c: 43:     {
-{
+[; ;navigation.c: 43:     Servo_Centro();
+[e ( _Servo_Centro ..  ]
 "44
-[; ;navigation.c: 44:         if(entorno.derecha > entorno.izquierda)
-[e $ ! > . _entorno 2 . _entorno 0 104  ]
-"45
-[; ;navigation.c: 45:         {
-{
+[; ;navigation.c: 44:     entorno.centro = Ultrasonic_Read();
+[e = . _entorno 1 ( _Ultrasonic_Read ..  ]
 "46
-[; ;navigation.c: 46:             Motor_SetSpeed(380);
-[e ( _Motor_SetSpeed (1 -> -> 380 `i `ui ]
+[; ;navigation.c: 46:     Servo_Izquierda();
+[e ( _Servo_Izquierda ..  ]
 "47
-[; ;navigation.c: 47:             Motor_Derecha();
-[e ( _Motor_Derecha ..  ]
-"48
-[; ;navigation.c: 48:         }
-}
-[e $U 105  ]
+[; ;navigation.c: 47:     entorno.izquierda = Ultrasonic_Read();
+[e = . _entorno 0 ( _Ultrasonic_Read ..  ]
 "49
-[; ;navigation.c: 49:         else
-[e :U 104 ]
+[; ;navigation.c: 49:     Servo_Derecha();
+[e ( _Servo_Derecha ..  ]
 "50
-[; ;navigation.c: 50:         {
-{
+[; ;navigation.c: 50:     entorno.derecha = Ultrasonic_Read();
+[e = . _entorno 2 ( _Ultrasonic_Read ..  ]
 "51
-[; ;navigation.c: 51:             Motor_SetSpeed(400);
-[e ( _Motor_SetSpeed (1 -> -> 400 `i `ui ]
-"52
-[; ;navigation.c: 52:             Motor_Izquierda();
-[e ( _Motor_Izquierda ..  ]
+[; ;navigation.c: 51: }
+[e :UE 102 ]
+}
 "53
-[; ;navigation.c: 53:         }
+[; ;navigation.c: 53: void Navigation_Scan(void)
+[v _Navigation_Scan `(v ~T0 @X0 1 ef ]
+"54
+[; ;navigation.c: 54: {
+{
+[e :U _Navigation_Scan ]
+[f ]
+"55
+[; ;navigation.c: 55:     Servo_Centro();
+[e ( _Servo_Centro ..  ]
+"56
+[; ;navigation.c: 56:     _delay((unsigned long)((50)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"58
+[; ;navigation.c: 58:     entorno.centro = Ultrasonic_Read();
+[e = . _entorno 1 ( _Ultrasonic_Read ..  ]
+"60
+[; ;navigation.c: 60:     Navigation_Decision();
+[e ( _Navigation_Decision ..  ]
+"62
+[; ;navigation.c: 62:     Servo_Izquierda();
+[e ( _Servo_Izquierda ..  ]
+"63
+[; ;navigation.c: 63:     _delay((unsigned long)((50)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"65
+[; ;navigation.c: 65:     entorno.izquierda = Ultrasonic_Read();
+[e = . _entorno 0 ( _Ultrasonic_Read ..  ]
+"67
+[; ;navigation.c: 67:     Navigation_Decision();
+[e ( _Navigation_Decision ..  ]
+"69
+[; ;navigation.c: 69:     Servo_Derecha();
+[e ( _Servo_Derecha ..  ]
+"70
+[; ;navigation.c: 70:     _delay((unsigned long)((50)*(20000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"72
+[; ;navigation.c: 72:     entorno.derecha = Ultrasonic_Read();
+[e = . _entorno 2 ( _Ultrasonic_Read ..  ]
+"74
+[; ;navigation.c: 74:     Navigation_Decision();
+[e ( _Navigation_Decision ..  ]
+"75
+[; ;navigation.c: 75: }
+[e :UE 103 ]
+}
+"77
+[; ;navigation.c: 77: void Navigation_Decision()
+[v _Navigation_Decision `(v ~T0 @X0 1 ef ]
+"78
+[; ;navigation.c: 78: {
+{
+[e :U _Navigation_Decision ]
+[f ]
+"81
+[; ;navigation.c: 81:     if(estadoNav == NAV_GIRO_IZQ)
+[e $ ! == -> _estadoNav `ui -> . `E1365 1 `ui 105  ]
+"82
+[; ;navigation.c: 82:     {
+{
+"83
+[; ;navigation.c: 83:         Motor_SetSpeed(500);
+[e ( _Motor_SetSpeed (1 -> -> 500 `i `ui ]
+"84
+[; ;navigation.c: 84:         Motor_Izquierda();
+[e ( _Motor_Izquierda ..  ]
+"86
+[; ;navigation.c: 86:         Message("GIRO IZQ", entorno.izquierda);
+[e ( _Message (2 , :s 1C . _entorno 0 ]
+"88
+[; ;navigation.c: 88:         tiempoEstado--;
+[e -- _tiempoEstado -> -> 1 `i `uc ]
+"90
+[; ;navigation.c: 90:         if(tiempoEstado == 0)
+[e $ ! == -> _tiempoEstado `i -> 0 `i 106  ]
+"91
+[; ;navigation.c: 91:             estadoNav = NAV_ADELANTE;
+[e = _estadoNav . `E1365 0 ]
+[e :U 106 ]
+"93
+[; ;navigation.c: 93:         return;
+[e $UE 104  ]
+"94
+[; ;navigation.c: 94:     }
 }
 [e :U 105 ]
-"55
-[; ;navigation.c: 55:         return;
-[e $UE 101  ]
-"56
-[; ;navigation.c: 56:     }
-}
-[e :U 103 ]
-"59
-[; ;navigation.c: 59:     if(entorno.izquierda < 10)
-[e $ ! < . _entorno 0 -> -> 10 `i `ui 106  ]
-"60
-[; ;navigation.c: 60:     {
+"96
+[; ;navigation.c: 96:     if(estadoNav == NAV_GIRO_DER)
+[e $ ! == -> _estadoNav `ui -> . `E1365 2 `ui 107  ]
+"97
+[; ;navigation.c: 97:     {
 {
-"61
-[; ;navigation.c: 61:         Motor_SetSpeed(350);
-[e ( _Motor_SetSpeed (1 -> -> 350 `i `ui ]
-"62
-[; ;navigation.c: 62:         Motor_Derecha();
+"98
+[; ;navigation.c: 98:         Motor_SetSpeed(500);
+[e ( _Motor_SetSpeed (1 -> -> 500 `i `ui ]
+"99
+[; ;navigation.c: 99:         Motor_Derecha();
 [e ( _Motor_Derecha ..  ]
-"63
-[; ;navigation.c: 63:     }
-}
-[e $U 107  ]
-"64
-[; ;navigation.c: 64:     else if(entorno.derecha < 10)
-[e :U 106 ]
-[e $ ! < . _entorno 2 -> -> 10 `i `ui 108  ]
-"65
-[; ;navigation.c: 65:     {
-{
-"66
-[; ;navigation.c: 66:         Motor_SetSpeed(350);
-[e ( _Motor_SetSpeed (1 -> -> 350 `i `ui ]
-"67
-[; ;navigation.c: 67:         Motor_Izquierda();
-[e ( _Motor_Izquierda ..  ]
-"68
-[; ;navigation.c: 68:     }
-}
-[e $U 109  ]
-"69
-[; ;navigation.c: 69:     else
+"101
+[; ;navigation.c: 101:         Message("GIRO DER", entorno.derecha);
+[e ( _Message (2 , :s 2C . _entorno 2 ]
+"103
+[; ;navigation.c: 103:         tiempoEstado--;
+[e -- _tiempoEstado -> -> 1 `i `uc ]
+"105
+[; ;navigation.c: 105:         if(tiempoEstado == 0)
+[e $ ! == -> _tiempoEstado `i -> 0 `i 108  ]
+"106
+[; ;navigation.c: 106:             estadoNav = NAV_ADELANTE;
+[e = _estadoNav . `E1365 0 ]
 [e :U 108 ]
-"70
-[; ;navigation.c: 70:     {
+"108
+[; ;navigation.c: 108:         return;
+[e $UE 104  ]
+"109
+[; ;navigation.c: 109:     }
+}
+[e :U 107 ]
+"111
+[; ;navigation.c: 111:     if(estadoNav == NAV_REVERSA)
+[e $ ! == -> _estadoNav `ui -> . `E1365 3 `ui 109  ]
+"112
+[; ;navigation.c: 112:     {
 {
-"71
-[; ;navigation.c: 71:         Motor_SetSpeed(400);
-[e ( _Motor_SetSpeed (1 -> -> 400 `i `ui ]
-"72
-[; ;navigation.c: 72:         Motor_Adelante();
-[e ( _Motor_Adelante ..  ]
-"73
-[; ;navigation.c: 73:     }
+"113
+[; ;navigation.c: 113:         Motor_SetSpeed(500);
+[e ( _Motor_SetSpeed (1 -> -> 500 `i `ui ]
+"114
+[; ;navigation.c: 114:         Motor_Atras();
+[e ( _Motor_Atras ..  ]
+"116
+[; ;navigation.c: 116:         Message("REVERSA", entorno.centro);
+[e ( _Message (2 , :s 3C . _entorno 1 ]
+"118
+[; ;navigation.c: 118:         tiempoEstado--;
+[e -- _tiempoEstado -> -> 1 `i `uc ]
+"120
+[; ;navigation.c: 120:         if(tiempoEstado == 0)
+[e $ ! == -> _tiempoEstado `i -> 0 `i 110  ]
+"121
+[; ;navigation.c: 121:             estadoNav = NAV_ADELANTE;
+[e = _estadoNav . `E1365 0 ]
+[e :U 110 ]
+"123
+[; ;navigation.c: 123:         return;
+[e $UE 104  ]
+"124
+[; ;navigation.c: 124:     }
 }
 [e :U 109 ]
-[e :U 107 ]
-"74
-[; ;navigation.c: 74: }
-[e :UE 101 ]
+"127
+[; ;navigation.c: 127:     if((entorno.centro < 10) ||
+[e $ ! || || < . _entorno 1 -> -> 10 `i `ui < . _entorno 0 -> -> 10 `i `ui < . _entorno 2 -> -> 10 `i `ui 111  ]
+"130
+[; ;navigation.c: 130:     {
+{
+"131
+[; ;navigation.c: 131:         estadoNav = NAV_REVERSA;
+[e = _estadoNav . `E1365 3 ]
+"132
+[; ;navigation.c: 132:         tiempoEstado = 1;
+[e = _tiempoEstado -> -> 1 `i `uc ]
+"133
+[; ;navigation.c: 133:         return;
+[e $UE 104  ]
+"134
+[; ;navigation.c: 134:     }
 }
+[e :U 111 ]
+"137
+[; ;navigation.c: 137:     if(entorno.centro < 15)
+[e $ ! < . _entorno 1 -> -> 15 `i `ui 112  ]
+"138
+[; ;navigation.c: 138:     {
+{
+"139
+[; ;navigation.c: 139:         if(entorno.derecha > entorno.izquierda)
+[e $ ! > . _entorno 2 . _entorno 0 113  ]
+"140
+[; ;navigation.c: 140:         {
+{
+"141
+[; ;navigation.c: 141:             estadoNav = NAV_GIRO_DER;
+[e = _estadoNav . `E1365 2 ]
+"142
+[; ;navigation.c: 142:             tiempoEstado = 2;
+[e = _tiempoEstado -> -> 2 `i `uc ]
+"143
+[; ;navigation.c: 143:         }
+}
+[e $U 114  ]
+"144
+[; ;navigation.c: 144:         else
+[e :U 113 ]
+"145
+[; ;navigation.c: 145:         {
+{
+"146
+[; ;navigation.c: 146:             estadoNav = NAV_GIRO_IZQ;
+[e = _estadoNav . `E1365 1 ]
+"147
+[; ;navigation.c: 147:             tiempoEstado = 2;
+[e = _tiempoEstado -> -> 2 `i `uc ]
+"148
+[; ;navigation.c: 148:         }
+}
+[e :U 114 ]
+"150
+[; ;navigation.c: 150:         return;
+[e $UE 104  ]
+"151
+[; ;navigation.c: 151:     }
+}
+[e :U 112 ]
+"154
+[; ;navigation.c: 154:     if(entorno.izquierda < 20)
+[e $ ! < . _entorno 0 -> -> 20 `i `ui 115  ]
+"155
+[; ;navigation.c: 155:     {
+{
+"156
+[; ;navigation.c: 156:         Motor_SetSpeed(500);
+[e ( _Motor_SetSpeed (1 -> -> 500 `i `ui ]
+"159
+[; ;navigation.c: 159:         Motor_CorregirDerecha();
+[e ( _Motor_CorregirDerecha ..  ]
+"161
+[; ;navigation.c: 161:         Message("COR DER", entorno.izquierda);
+[e ( _Message (2 , :s 4C . _entorno 0 ]
+"163
+[; ;navigation.c: 163:         return;
+[e $UE 104  ]
+"164
+[; ;navigation.c: 164:     }
+}
+[e :U 115 ]
+"167
+[; ;navigation.c: 167:     if(entorno.derecha < 20)
+[e $ ! < . _entorno 2 -> -> 20 `i `ui 116  ]
+"168
+[; ;navigation.c: 168:     {
+{
+"169
+[; ;navigation.c: 169:         Motor_SetSpeed(500);
+[e ( _Motor_SetSpeed (1 -> -> 500 `i `ui ]
+"172
+[; ;navigation.c: 172:         Motor_CorregirIzquierda();
+[e ( _Motor_CorregirIzquierda ..  ]
+"174
+[; ;navigation.c: 174:         Message("COR IZQ", entorno.derecha);
+[e ( _Message (2 , :s 5C . _entorno 2 ]
+"176
+[; ;navigation.c: 176:         return;
+[e $UE 104  ]
+"177
+[; ;navigation.c: 177:     }
+}
+[e :U 116 ]
+"180
+[; ;navigation.c: 180:     Motor_SetSpeed(500);
+[e ( _Motor_SetSpeed (1 -> -> 500 `i `ui ]
+"181
+[; ;navigation.c: 181:     Motor_Adelante();
+[e ( _Motor_Adelante ..  ]
+"183
+[; ;navigation.c: 183:     Message("ADELANTE", entorno.centro);
+[e ( _Message (2 , :s 6C . _entorno 1 ]
+"184
+[; ;navigation.c: 184: }
+[e :UE 104 ]
+}
+"186
+[; ;navigation.c: 186: void Message(char *mensaje, unsigned int distancia)
+[v _Message `(v ~T0 @X0 1 ef2`*uc`ui ]
+"187
+[; ;navigation.c: 187: {
+{
+[e :U _Message ]
+"186
+[; ;navigation.c: 186: void Message(char *mensaje, unsigned int distancia)
+[v _mensaje `*uc ~T0 @X0 1 r1 ]
+[v _distancia `ui ~T0 @X0 1 r2 ]
+"187
+[; ;navigation.c: 187: {
+[f ]
+"188
+[; ;navigation.c: 188:     char buffer[16];
+[v _buffer `uc ~T0 @X0 -> 16 `i a ]
+"190
+[; ;navigation.c: 190:     LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"192
+[; ;navigation.c: 192:     LCD_SetCursor(1,1);
+[e ( _LCD_SetCursor (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"193
+[; ;navigation.c: 193:     LCD_Write_String(mensaje);
+[e ( _LCD_Write_String (1 -> _mensaje `*Cuc ]
+"195
+[; ;navigation.c: 195:     sprintf(buffer, "D:%u", distancia);
+[e ( _sprintf (1 , (. , &U _buffer :s 7C _distancia ]
+"197
+[; ;navigation.c: 197:     LCD_SetCursor(2,1);
+[e ( _LCD_SetCursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"198
+[; ;navigation.c: 198:     LCD_Write_String(buffer);
+[e ( _LCD_Write_String (1 -> &U _buffer `*Cuc ]
+"199
+[; ;navigation.c: 199: }
+[e :UE 117 ]
+}
+[p f _sprintf 8389632 ]
+[a 7C 68 58 37 117 0 ]
+[a 4C 67 79 82 32 68 69 82 0 ]
+[a 2C 71 73 82 79 32 68 69 82 0 ]
+[a 5C 67 79 82 32 73 90 81 0 ]
+[a 1C 71 73 82 79 32 73 90 81 0 ]
+[a 6C 65 68 69 76 65 78 84 69 0 ]
+[a 3C 82 69 86 69 82 83 65 0 ]

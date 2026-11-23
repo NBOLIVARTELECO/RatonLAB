@@ -3,4 +3,5 @@ navigation.c  \
 navigation.h  \
 ultrasonic.h  \
 servo.h  \
-motor.h 
+motor.h  \
+lcd.h 

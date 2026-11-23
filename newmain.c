@@ -3,6 +3,7 @@
 #include "ultrasonic.h"
 #include "servo.h"
 #include "navigation.h"
+#include "lcd.h"
 
 
 // CONFIG
@@ -20,7 +21,7 @@
 
 void LED_Boot(void);
 void testUltrasonido(void);
-void testServo(void);
+void testMotores(void);
 void Navigation_Update(void);
 void Navigation_Init(void);
 
@@ -44,17 +45,25 @@ void main(void)
     Sistema_Init();
     
     estadoActual = ESTADO_STOP;
-
+    unsigned int contador = 0;
     while(1)
     {
        
-       Navigation_Update();
-    
+        Navigation_Scan();
+       // testMotores();
+
+//        LCD_Clear();
+//        LCD_SetCursor(1,1);
+//        LCD_Write_String("Hola");
+
+        __delay_ms(500);
+  
     }
 }
 
 void Sistema_Init(void)
 {
+    ADCON1 = 0x07; //salidas lcd digitales
     TRISAbits.TRISA0 = 0;
     RA0 = 0;
 
@@ -63,6 +72,7 @@ void Sistema_Init(void)
     Ultrasonic_Init();
     Servo_Init();
     Navigation_Init();
+    LCD_Init();
 }
 void LED_Boot(void)
 {
@@ -77,6 +87,52 @@ void LED_Boot(void)
         __delay_ms(200);
     }
 }
+//void testMotores(void)
+//{
+//    Motor_SetSpeed(500);
+//
+//    // Adelante
+//    Motor_Adelante();
+//    __delay_ms(3000);
+//
+//    Motor_Stop();
+//    __delay_ms(1000);
+//
+//    // Atrás
+//    Motor_Atras();
+//    __delay_ms(3000);
+//
+//    Motor_Stop();
+//    __delay_ms(1000);
+//
+//    // Giro izquierda
+//    Motor_Izquierda();
+//    __delay_ms(3000);
+//
+//    Motor_Stop();
+//    __delay_ms(1000);
+//
+//    // Giro derecha
+//    Motor_Derecha();
+//    __delay_ms(3000);
+//
+//    Motor_Stop();
+//    __delay_ms(1000);
+//
+//    // Corrección izquierda
+//    Motor_CorregirIzquierda();
+//    __delay_ms(3000);
+//
+//    Motor_Stop();
+//    __delay_ms(1000);
+//
+//    // Corrección derecha
+//    Motor_CorregirDerecha();
+//    __delay_ms(3000);
+//
+//    Motor_Stop();
+//    __delay_ms(1000);
+//}
 
 
 

@@ -24,6 +24,8 @@
       <itemPath>ultrasonic.c</itemPath>
       <itemPath>servo.c</itemPath>
       <itemPath>navigation.c</itemPath>
+      <itemPath>lcd.h</itemPath>
+      <itemPath>lcd.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
